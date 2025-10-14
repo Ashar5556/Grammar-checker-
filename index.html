@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="GrammerChecker Tool - Free online grammar checker to detect and fix grammar, punctuation, and sentence structure errors.">
+    <meta name="keywords" content="grammar checker, grammar tool, punctuation checker, sentence structure, writing assistant">
+    <title>GrammerChecker Tool - Free Online Grammar Checker</title>
+    <style>
+        /* Reset and base styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        :root {
+            --bg-color: #f8f9fa;
+            --text-color: #333;
+            --card-bg: white;
+            --primary-color: #4a6fa5;
+            --secondary-color: #2c3e50;
+            --accent-color: #f1c40f;
+            --success-color: #2ecc71;
+            --error-color: #e74c3c;
+            --border-color: #e1e5e9;
+            --shadow: 0 2px 15px rgba(0,0,0,0.05);
+        }
+        
+        .dark-mode {
+            --bg-color: #1a1a2e;
+            --text-color: #e6e6e6;
+            --card-bg: #16213e;
+            --primary-color: #5d8fd4;
+            --secondary-color: #0f3460;
+            --accent-color: #f39c12;
+            --success-color: #27ae60;
+            --error-color: #c0392b;
+            --border-color: #2d3748;
+            --shadow: 0 2px 15px rgba(0,0,0,0.2);
+        }
+        
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        
+        /* Header styles */
+        header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 1rem 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo-icon {
+            margin-right: 10px;
+            font-size: 2rem;
+        }
+        
+        /* Navigation */
+        nav ul {
+            display: flex;
+            list-style: none;
+            align-items: center;
+        }
+        
+        nav ul li {
+            margin-left: 20px;
+        }
+        
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        nav ul li a:hover {
+            color: var(--accent-color);
+        }
+        
+        /* Dark mode toggle */
+        .theme-toggle {
+            background: transparent;
+            border: none;
+            color: white;
+            cursor: pointer;
+            font-size: 1.2rem;
+            padding: 5px;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background-color 0.3s;
+        }
+        
+        .theme-toggle:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+        
+        /* Main content area */
+        main {
+            display: flex;
+            padding: 30px 0;
+            min-height: calc(100vh - 200px);
+        }
+        
+        .content {
+            flex: 1;
+            padding-right: 20px;
+        }
+        
+        /* Text area styles */
+        .text-area-container {
+            background: var(--card-bg);
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+            padding: 25px;
+            margin-bottom: 30px;
+        }
+        
+        .text-area-container h2 {
+            margin-bottom: 15px;
+            color: var(--secondary-color);
+            font-weight: 600;
+        }
+        
+        textarea {
+            width: 100%;
+            height: 300px;
+            padding: 15px;
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            font-size: 16px;
+            resize: vertical;
+            transition: border-color 0.3s;
+            background-color: var(--card-bg);
+            color: var(--text-color);
+        }
+        
+        textarea:focus {
+            outline: none;
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 2px rgba(74, 111, 165, 0.2);
+        }
+        
+        /* Button styles */
+        .button-group {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+        
+        button {
+            padding: 12px 25px;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        button i {
+            margin-right: 8px;
+        }
+        
+        .primary-btn {
+            background-color: var(--primary-color);
+            color: white;
+        }
+        
+        .primary-btn:hover {
+            background-color: #3a5a8c;
+            transform: translateY(-2px);
+        }
+        
+        .secondary-btn {
+            background-color: var(--success-color);
+            color: white;
+        }
+        
+        .secondary-btn:hover {
+            background-color: #27ae60;
+            transform: translateY(-2px);
+        }
+        
+        .tertiary-btn {
+            background-color: #95a5a6;
+            color: white;
+        }
+        
+        .tertiary-btn:hover {
+            background-color: #7f8c8d;
+            transform: translateY(-2px);
+        }
+        
+        /* Results area */
+        .results-container {
+            background: var(--card-bg);
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+            padding: 25px;
+        }
+        
+        .results-container h2 {
+            margin-bottom: 15px;
+            color: var(--secondary-color);
+            font-weight: 600;
+        }
+        
+        .results-text {
+            min-height: 100px;
+            padding: 15px;
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            background-color: var(--bg-color);
+            white-space: pre-wrap;
+            line-height: 1.8;
+        }
+        
+        .highlight-error {
+            background-color: #ffebee;
+            padding: 2px 4px;
+            border-radius: 3px;
+            text-decoration: underline;
+            text-decoration-color: var(--error-color);
+        }
+        
+        .highlight-corrected {
+            background-color: #e8f5e9;
+            padding: 2px 4px;
+            border-radius: 3px;
+        }
+        
+        /* Sidebar styles */
+        .sidebar {
+            width: 300px;
+            padding-left: 20px;
+        }
+        
+        .ad-container {
+            background: var(--card-bg);
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+            padding: 20px;
+            margin-bottom: 20px;
+            text-align: center;
+            min-height: 250px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .ad-label {
+            font-size: 12px;
+            color: #7f8c8d;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .ad-content {
+            width: 100%;
+            height: 200px;
+            background-color: var(--bg-color);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #7f8c8d;
+            font-weight: 500;
+        }
+        
+        /* Footer styles */
+        footer {
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 30px 0;
+            margin-top: 30px;
+        }
+        
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        
+        .footer-section {
+            flex: 1;
+            min-width: 250px;
+            margin-bottom: 20px;
+            padding-right: 20px;
+        }
+        
+        .footer-section h3 {
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+        }
+        
+        .footer-section ul {
+            list-style: none;
+        }
+        
+        .footer-section ul li {
+            margin-bottom: 10px;
+        }
+        
+        .footer-section ul li a {
+            color: #bdc3c7;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .footer-section ul li a:hover {
+            color: var(--accent-color);
+        }
+        
+        .copyright {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #34495e;
+            color: #bdc3c7;
+            font-size: 14px;
+        }
+        
+        /* Page content styles */
+        .page-content {
+            background: var(--card-bg);
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+            padding: 30px;
+            margin-bottom: 30px;
+        }
+        
+        .page-content h1 {
+            color: var(--secondary-color);
+            margin-bottom: 20px;
+            font-size: 2rem;
+        }
+        
+        .page-content h2 {
+            color: var(--primary-color);
+            margin: 25px 0 15px;
+            font-size: 1.5rem;
+        }
+        
+        .page-content p {
+            margin-bottom: 15px;
+            line-height: 1.7;
+        }
+        
+        .page-content ul {
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .page-content li {
+            margin-bottom: 10px;
+        }
+        
+        /* Responsive design */
+        @media (max-width: 992px) {
+            main {
+                flex-direction: column;
+            }
+            
+            .content {
+                padding-right: 0;
+                margin-bottom: 30px;
+            }
+            
+            .sidebar {
+                width: 100%;
+                padding-left: 0;
+            }
+            
+            .ad-container {
+                min-height: 150px;
+            }
+            
+            .ad-content {
+                height: 120px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            nav ul {
+                margin-top: 15px;
+                justify-content: center;
+            }
+            
+            nav ul li {
+                margin: 0 10px;
+            }
+            
+            .button-group {
+                justify-content: center;
+            }
+            
+            button {
+                flex: 1;
+                min-width: 150px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .footer-content {
+                flex-direction: column;
+            }
+            
+            .footer-section {
+                padding-right: 0;
+            }
+            
+            button {
+                min-width: 100%;
+            }
+        }
+        
+        /* Loading animation */
+        .loading {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 3px solid rgba(255,255,255,.3);
+            border-radius: 50%;
+            border-top-color: #fff;
+            animation: spin 1s ease-in-out infinite;
+            margin-right: 10px;
+        }
+        
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+        
+        /* Stats section */
+        .stats {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px 0;
+            text-align: center;
+        }
+        
+        .stat-item {
+            padding: 15px;
+        }
+        
+        .stat-number {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--primary-color);
+        }
+        
+        .stat-label {
+            font-size: 0.9rem;
+            color: #7f8c8d;
+        }
+        
+        /* Hidden class for page navigation */
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header with ad space -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <span class="logo-icon">✓</span>
+                    <span>GrammerChecker Tool</span>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#" data-page="home">Home</a></li>
+                        <li><a href="#" data-page="about">About Us</a></li>
+                        <li><a href="#" data-page="privacy">Privacy Policy</a></li>
+                        <li><a href="#" data-page="terms">Terms of Use</a></li>
+                        <li>
+                            <button class="theme-toggle" id="themeToggle" title="Toggle dark mode">
+                                🌙
+                            </button>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Home Page -->
+    <main class="container" id="home-page">
+        <div class="content">
+            <!-- Text input area -->
+            <div class="text-area-container">
+                <h2>Check Your Grammar</h2>
+                <textarea id="textInput" placeholder="Paste or type your text here...">I has a apple. She go to school yesterday. Their happy with there results. The man which I saw was tall. Me and him are friends.</textarea>
+                
+                <div class="button-group">
+                    <button id="checkGrammar" class="primary-btn">
+                        <i>✓</i> Check Grammar
+                    </button>
+                    <button id="fixGrammar" class="secondary-btn">
+                        <i>🛠️</i> Fix Grammar
+                    </button>
+                    <button id="copyText" class="tertiary-btn">
+                        <i>📋</i> Copy Text
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Results area -->
+            <div class="results-container">
+                <h2>Results</h2>
+                <div id="results" class="results-text">
+                    Your corrected text will appear here...
+                </div>
+            </div>
+            
+            <!-- Stats section -->
+            <div class="stats">
+                <div class="stat-item">
+                    <div class="stat-number">5,000+</div>
+                    <div class="stat-label">Daily Checks</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">98%</div>
+                    <div class="stat-label">Accuracy</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">10s</div>
+                    <div class="stat-label">Avg. Check Time</div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Sidebar with ads -->
+        <aside class="sidebar">
+            <div class="ad-container">
+                <div class="ad-label">Advertisement</div>
+                <div class="ad-content">Ad Space - 300x250</div>
+            </div>
+            
+            <div class="ad-container">
+                <div class="ad-label">Sponsored</div>
+                <div class="ad-content">Ad Space - 300x250</div>
+            </div>
+            
+            <div class="ad-container">
+                <div class="ad-label">Recommended Tool</div>
+                <div class="ad-content">Ad Space - 300x250</div>
+            </div>
+        </aside>
+    </main>
+
+    <!-- About Us Page -->
+    <main class="container hidden" id="about-page">
+        <div class="page-content">
+            <h1>About GrammerChecker Tool</h1>
+            
+            <p>Welcome to GrammerChecker Tool, your trusted companion for flawless writing. Our mission is to help people communicate more effectively by providing a powerful, easy-to-use grammar checking tool that's accessible to everyone.</p>
+            
+            <h2>Our Story</h2>
+            <p>Founded in 2023, GrammerChecker Tool was born from a simple observation: even the most skilled writers sometimes make grammatical errors. Our team of linguists, developers, and language enthusiasts came together to create a solution that would help writers of all levels improve their writing.</p>
+            
+            <h2>How It Works</h2>
+            <p>Our advanced algorithm analyzes your text using natural language processing and machine learning technologies. It identifies grammatical errors, punctuation mistakes, and issues with sentence structure, then provides suggestions for improvement.</p>
+            
+            <h2>Our Team</h2>
+            <p>We're a diverse team of language experts, software engineers, and user experience designers passionate about making writing accessible and error-free for everyone.</p>
+            
+            <h2>Our Values</h2>
+            <ul>
+                <li><strong>Accuracy:</strong> We strive for the highest possible accuracy in our grammar checking</li>
+                <li><strong>Accessibility:</strong> We believe everyone deserves access to quality writing tools</li>
+                <li><strong>Privacy:</strong> We respect your privacy and handle your data responsibly</li>
+                <li><strong>Innovation:</strong> We continuously improve our technology to better serve our users</li>
+            </ul>
+        </div>
+    </main>
+
+    <!-- Privacy Policy Page -->
+    <main class="container hidden" id="privacy-page">
+        <div class="page-content">
+            <h1>Privacy Policy</h1>
+            
+            <p>Last updated: October 15, 2023</p>
+            
+            <p>This Privacy Policy describes how GrammerChecker Tool ("we", "us", or "our") collects, uses, and shares your personal information when you use our website.</p>
+            
+            <h2>Information We Collect</h2>
+            <p>We collect information you provide directly to us when you use our grammar checking service:</p>
+            <ul>
+                <li><strong>Text Input:</strong> The text you submit for grammar checking</li>
+                <li><strong>Usage Information:</strong> How you interact with our website</li>
+                <li><strong>Technical Information:</strong> Browser type, IP address, and device information</li>
+            </ul>
+            
+            <h2>How We Use Your Information</h2>
+            <p>We use the information we collect to:</p>
+            <ul>
+                <li>Provide and improve our grammar checking services</li>
+                <li>Understand how users interact with our website</li>
+                <li>Develop new features and functionality</li>
+                <li>Ensure the security of our services</li>
+            </ul>
+            
+            <h2>Data Retention</h2>
+            <p>We retain the text you submit for grammar checking only for the duration necessary to process your request. We do not permanently store your text inputs.</p>
+            
+            <h2>Third-Party Services</h2>
+            <p>We use third-party services for analytics and advertising. These services may collect information about your use of our website.</p>
+            
+            <h2>Your Rights</h2>
+            <p>You have the right to access, correct, or delete your personal information. Contact us if you wish to exercise these rights.</p>
+            
+            <h2>Changes to This Policy</h2>
+            <p>We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new policy on this page.</p>
+            
+            <h2>Contact Us</h2>
+            <p>If you have any questions about this Privacy Policy, please contact us at privacy@grammercheckertool.com.</p>
+        </div>
+    </main>
+
+    <!-- Terms of Use Page -->
+    <main class="container hidden" id="terms-page">
+        <div class="page-content">
+            <h1>Terms of Use</h1>
+            
+            <p>Last updated: October 15, 2023</p>
+            
+            <p>Please read these Terms of Use carefully before using the GrammerChecker Tool website.</p>
+            
+            <h2>Acceptance of Terms</h2>
+            <p>By accessing or using our website, you agree to be bound by these Terms of Use. If you disagree with any part of the terms, you may not access our website.</p>
+            
+            <h2>Use License</h2>
+            <p>We grant you a limited, non-exclusive, non-transferable license to use our grammar checking services for personal or internal business purposes.</p>
+            
+            <h2>User Responsibilities</h2>
+            <p>You agree not to:</p>
+            <ul>
+                <li>Use our service for any illegal purpose</li>
+                <li>Submit content that infringes on intellectual property rights</li>
+                <li>Attempt to disrupt or interfere with our service</li>
+                <li>Use automated systems to access our service</li>
+            </ul>
+            
+            <h2>Intellectual Property</h2>
+            <p>The content, features, and functionality of our website are owned by GrammerChecker Tool and are protected by international copyright, trademark, and other intellectual property laws.</p>
+            
+            <h2>Disclaimer</h2>
+            <p>Our grammar checking service is provided "as is" without warranties of any kind. We do not guarantee that our service will be error-free or uninterrupted.</p>
+            
+            <h2>Limitation of Liability</h2>
+            <p>To the fullest extent permitted by law, GrammerChecker Tool shall not be liable for any indirect, incidental, special, consequential, or punitive damages resulting from your use of our service.</p>
+            
+            <h2>Governing Law</h2>
+            <p>These Terms shall be governed by and construed in accordance with the laws of the United States, without regard to its conflict of law provisions.</p>
+            
+            <h2>Changes to Terms</h2>
+            <p>We reserve the right to modify these terms at any time. We will provide notice of significant changes by posting the updated terms on our website.</p>
+            
+            <h2>Contact Information</h2>
+            <p>If you have any questions about these Terms of Use, please contact us at legal@grammercheckertool.com.</p>
+        </div>
+    </main>
+
+    <!-- Footer with ads -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>GrammerChecker Tool</h3>
+                    <p>Free online grammar checker to detect and fix grammar, punctuation, and sentence structure errors.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#" data-page="home">Home</a></li>
+                        <li><a href="#" data-page="about">About Us</a></li>
+                        <li><a href="#" data-page="privacy">Privacy Policy</a></li>
+                        <li><a href="#" data-page="terms">Terms of Service</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Tools</h3>
+                    <ul>
+                        <li><a href="#">Plagiarism Checker</a></li>
+                        <li><a href="#">Spell Checker</a></li>
+                        <li><a href="#">Punctuation Checker</a></li>
+                        <li><a href="#">Writing Assistant</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="ad-container">
+                <div class="ad-label">Advertisement</div>
+                <div class="ad-content">Ad Space - 728x90</div>
+            </div>
+            
+            <div class="copyright">
+                &copy; 2023 GrammerChecker Tool. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Grammar checking and fixing functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const textInput = document.getElementById('textInput');
+            const checkGrammarBtn = document.getElementById('checkGrammar');
+            const fixGrammarBtn = document.getElementById('fixGrammar');
+            const copyTextBtn = document.getElementById('copyText');
+            const resultsDiv = document.getElementById('results');
+            const themeToggle = document.getElementById('themeToggle');
+            
+            // Page navigation elements
+            const homePage = document.getElementById('home-page');
+            const aboutPage = document.getElementById('about-page');
+            const privacyPage = document.getElementById('privacy-page');
+            const termsPage = document.getElementById('terms-page');
+            const pageLinks = document.querySelectorAll('a[data-page]');
+            
+            // Common grammar errors and their corrections
+            const grammarRules = [
+                { error: /\bI has\b/gi, correction: "I have" },
+                { error: /\bShe go\b/gi, correction: "She goes" },
+                { error: /\bTheir happy\b/gi, correction: "They're happy" },
+                { error: /\bthere results\b/gi, correction: "their results" },
+                { error: /\bwhich I saw\b/gi, correction: "whom I saw" },
+                { error: /\bMe and him\b/gi, correction: "He and I" },
+                { error: /\bwas tall\b/gi, correction: "was tall" }, // Example of correct text
+                { error: /\bare friends\b/gi, correction: "are friends" } // Example of correct text
+            ];
+            
+            // Check grammar function
+            checkGrammarBtn.addEventListener('click', function() {
+                const text = textInput.value;
+                if (!text.trim()) {
+                    resultsDiv.innerHTML = "Please enter some text to check.";
+                    return;
+                }
+                
+                // Show loading state
+                checkGrammarBtn.innerHTML = '<span class="loading"></span> Checking...';
+                checkGrammarBtn.disabled = true;
+                
+                // Simulate processing time
+                setTimeout(() => {
+                    let highlightedText = text;
+                    
+                    // Apply grammar rules to highlight errors
+                    grammarRules.forEach(rule => {
+                        if (rule.error.test(text)) {
+                            highlightedText = highlightedText.replace(rule.error, 
+                                match => `<span class="highlight-error">${match}</span>`);
+                        }
+                    });
+                    
+                    resultsDiv.innerHTML = highlightedText;
+                    
+                    // Reset button
+                    checkGrammarBtn.innerHTML = '<i>✓</i> Check Grammar';
+                    checkGrammarBtn.disabled = false;
+                }, 1000);
+            });
+            
+            // Fix grammar function
+            fixGrammarBtn.addEventListener('click', function() {
+                const text = textInput.value;
+                if (!text.trim()) {
+                    resultsDiv.innerHTML = "Please enter some text to fix.";
+                    return;
+                }
+                
+                // Show loading state
+                fixGrammarBtn.innerHTML = '<span class="loading"></span> Fixing...';
+                fixGrammarBtn.disabled = true;
+                
+                // Simulate processing time
+                setTimeout(() => {
+                    let correctedText = text;
+                    
+                    // Apply grammar corrections
+                    grammarRules.forEach(rule => {
+                        correctedText = correctedText.replace(rule.error, rule.correction);
+                    });
+                    
+                    // Highlight corrections
+                    grammarRules.forEach(rule => {
+                        if (rule.error.test(text)) {
+                            correctedText = correctedText.replace(rule.correction, 
+                                `<span class="highlight-corrected">${rule.correction}</span>`);
+                        }
+                    });
+                    
+                    resultsDiv.innerHTML = correctedText;
+                    
+                    // Reset button
+                    fixGrammarBtn.innerHTML = '<i>🛠️</i> Fix Grammar';
+                    fixGrammarBtn.disabled = false;
+                }, 1500);
+            });
+            
+            // Copy text function
+            copyTextBtn.addEventListener('click', function() {
+                const resultsText = resultsDiv.textContent;
+                
+                if (resultsText === "Your corrected text will appear here..." || 
+                    resultsText === "Please enter some text to check." || 
+                    resultsText === "Please enter some text to fix.") {
+                    alert("No corrected text to copy.");
+                    return;
+                }
+                
+                // Create a temporary textarea to copy from
+                const tempTextArea = document.createElement('textarea');
+                tempTextArea.value = resultsText;
+                document.body.appendChild(tempTextArea);
+                tempTextArea.select();
+                document.execCommand('copy');
+                document.body.removeChild(tempTextArea);
+                
+                // Visual feedback
+                const originalText = copyTextBtn.innerHTML;
+                copyTextBtn.innerHTML = '<i>✓</i> Copied!';
+                
+                setTimeout(() => {
+                    copyTextBtn.innerHTML = originalText;
+                }, 2000);
+            });
+            
+            // Dark mode toggle
+            themeToggle.addEventListener('click', function() {
+                document.body.classList.toggle('dark-mode');
+                
+                // Update the toggle button icon
+                if (document.body.classList.contains('dark-mode')) {
+                    themeToggle.innerHTML = '☀️';
+                } else {
+                    themeToggle.innerHTML = '🌙';
+                }
+                
+                // Save preference to localStorage
+                if (document.body.classList.contains('dark-mode')) {
+                    localStorage.setItem('darkMode', 'enabled');
+                } else {
+                    localStorage.setItem('darkMode', 'disabled');
+                }
+            });
+            
+            // Check for saved dark mode preference
+            if (localStorage.getItem('darkMode') === 'enabled') {
+                document.body.classList.add('dark-mode');
+                themeToggle.innerHTML = '☀️';
+            }
+            
+            // Page navigation
+            pageLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const page = this.getAttribute('data-page');
+                    
+                    // Hide all pages
+                    homePage.classList.add('hidden');
+                    aboutPage.classList.add('hidden');
+                    privacyPage.classList.add('hidden');
+                    termsPage.classList.add('hidden');
+                    
+                    // Show selected page
+                    document.getElementById(`${page}-page`).classList.remove('hidden');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
