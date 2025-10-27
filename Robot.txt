@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://grammercheckertool.netlify.app/sitemap.xml
