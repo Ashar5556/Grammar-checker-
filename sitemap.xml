@@ -9,7 +9,11 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://grammercheckertool.netlify.app/contact</loc>
+    <loc>https://grammercheckertool.netlify.app/privacy-policy</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://grammercheckertool.netlify.app/terms-of-use</loc>
     <priority>0.8</priority>
   </url>
 </urlset>
