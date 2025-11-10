@@ -1,61 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://www.grammarcheckertool.com/</loc>
+    <loc>https://grammar-checkertool.netlify.app/</loc>
     <lastmod>2025-01-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://www.grammarcheckertool.com/about.html</loc>
+    <loc>https://grammar-checkertool.netlify.app/#about</loc>
     <lastmod>2025-01-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.grammarcheckertool.com/privacy-policy.html</loc>
+    <loc>https://grammar-checkertool.netlify.app/#privacy</loc>
     <lastmod>2025-01-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://www.grammarcheckertool.com/terms-of-use.html</loc>
+    <loc>https://grammar-checkertool.netlify.app/#terms</loc>
     <lastmod>2025-01-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://www.grammarcheckertool.com/blog/</loc>
+    <loc>https://grammar-checkertool.netlify.app/blog/</loc>
     <lastmod>2025-01-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.grammarcheckertool.com/blog/grammar-tips.html</loc>
+    <loc>https://grammar-checkertool.netlify.app/blog/grammar-tips.html</loc>
     <lastmod>2025-01-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.grammarcheckertool.com/blog/writing-guides.html</loc>
+    <loc>https://grammar-checkertool.netlify.app/blog/writing-guides.html</loc>
     <lastmod>2025-01-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.grammarcheckertool.com/blog/english-learning.html</loc>
+    <loc>https://grammar-checkertool.netlify.app/blog/english-learning.html</loc>
     <lastmod>2025-01-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.grammarcheckertool.com/blog/essay-writing.html</loc>
+    <loc>https://grammar-checkertool.netlify.app/blog/essay-writing.html</loc>
     <lastmod>2025-01-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.grammarcheckertool.com/blog/common-mistakes.html</loc>
+    <loc>https://grammar-checkertool.netlify.app/blog/common-mistakes.html</loc>
     <lastmod>2025-01-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
