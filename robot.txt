@@ -1,9 +1,9 @@
 User-agent: *
 Allow: /
-Crawl-delay: 2
+Crawl-delay 2
 
 # Sitemap location
-Sitemap: https://grammar-checkertool.netlify.app/sitemap.xml
+Sitemap: https://grammar-checker-smoky.vercel.app/sitemapxml
 
 # Allow all major search engine bots
 User-agent: Googlebot
@@ -24,7 +24,9 @@ Crawl-delay: 1
 
 User-agent: Baiduspider
 Allow: /
-Crawl-delay: 3
+: 3
+
+User-a: 3
 
 User-agent: YandexBot
 Allow: /
