@@ -3,7 +3,7 @@ Allow: /
 Crawl-delay 2
 
 # Sitemap location - VERCEL URL
-Sitemap: https://grammar-checker-smoky.vercel.app/sitemapxml
+Sitemap: https://grammar-checker-smoky.vercel.app/sitemap.xml
 
 # Allow all major search engine bots
 User-agent: Googlebot
