@@ -31,33 +31,4 @@
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://grammar-checker-smoky.vercel.app/blog/grammar-tips.html</loc>
-    <lastmod>2025-01-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://grammar-checker-smoky.vercel.app/blog/writing-guides.html</loc>
-    <lastmod>2025-01-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://grammar-checker-smoky.vercel.app/blog/english-learning.html</loc>
-    <lastmod>2025-01-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://grammar-checker-smoky.vercel.app/blog/essay-writing.html</loc>
-    <lastmod>2025-01-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://grammar-checker-smoky.vercel.app/blog/common-mistakes.html</loc>
-    <lastmod>2025-01-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
 </urlset>
