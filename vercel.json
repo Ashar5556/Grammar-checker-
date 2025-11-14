@@ -22,7 +22,11 @@
   "rewrites": [
     {
       "source": "/(.*)",
-      "destination": "/index.html"
+      "destination": "/index.html
+1"
     }
-  ]
+  ],
+  "cleanurls": true,
+  "trailingsplash": false
 }
+    
