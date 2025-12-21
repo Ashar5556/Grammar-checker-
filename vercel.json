@@ -9,7 +9,7 @@
         }
       ],
       "destination": "https://grammarify.xyz/$1",
-      "statusCode": 307
+      "statusCode": 308
     },
     {
       "source": "/(.*)",
@@ -20,16 +20,16 @@
         }
       ],
       "destination": "https://grammarify.xyz/$1",
-      "statusCode": 307
+      "statusCode": 308
     }
   ],
-  "routes": [
-    { "src": "/faqs", "dest": "/faqs.html" },
-    { "src": "/privacy-policy", "dest": "/privacy-policy.html" },
-    { "src": "/terms-of-use", "dest": "/terms-of-use.html" },
-    { "src": "/about-us", "dest": "/about-us.html" },
-    { "src": "/grammar-resources", "dest": "/blog/index.html" },
-    { "src": "/blog", "dest": "/blog/index.html" }
+  "rewrites": [
+    { "source": "/faqs", "destination": "/faqs.html" },
+    { "source": "/privacy-policy", "destination": "/privacy-policy.html" },
+    { "source": "/terms-of-use", "destination": "/terms-of-use.html" },
+    { "source": "/about-us", "destination": "/about-us.html" },
+    { "source": "/grammar-resources", "destination": "/blog/index.html" },
+    { "source": "/blog", "destination": "/blog/index.html" }
   ]
 }
 
