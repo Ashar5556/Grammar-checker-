@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Homepage -->
+  <url>
+    <loc>https://grammarify.xyz/</loc>
+    <priority>1.0</priority>
+    <changefreq>daily</changefreq>
+  </url>
+
+  <!-- Grammar Resources (Blog Listing) -->
+  <url>
+    <loc>https://grammarify.xyz/grammar-resources</loc>
+    <priority>0.9</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <!-- Blog Post -->
+  <url>
+    <loc>https://grammarify.xyz/blog/2025-12-01-how-to-use-grammarify-free-grammar-checker.html</loc>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <!-- FAQs -->
+  <url>
+    <loc>https://grammarify.xyz/faqs</loc>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <!-- About -->
+  <url>
+    <loc>https://grammarify.xyz/about-us</loc>
+    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <!-- Privacy Policy -->
+  <url>
+    <loc>https://grammarify.xyz/privacy-policy</loc>
+    <changefreq>yearly</changefreq>
+  </url>
+
+  <!-- Terms -->
+  <url>
+    <loc>https://grammarify.xyz/terms-of-use</loc>
+    <changefreq>yearly</changefreq>
+  </url>
+
+</urlset>
