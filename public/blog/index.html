@@ -100,7 +100,8 @@
         // Simple version - no pagination
         async function loadBlogs() {
             try {
-                const response = await fetch('posts.json');
+                const response = await fetch("/blog/posts.json")
+;
                 const blogs = await response.json();
                 
                 // Sort by date (newest first)
@@ -175,7 +176,8 @@
             });
             
             // Load all blogs and filter
-            fetch('posts.json')
+            fetch("/blog/posts.json")
+
                 .then(res => res.json())
                 .then(blogs => {
                     if (category === 'All') {
