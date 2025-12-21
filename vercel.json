@@ -22,5 +22,14 @@
       "destination": "https://grammarify.xyz/$1",
       "statusCode": 307
     }
+  ],
+  "routes": [
+    { "src": "/faqs", "dest": "/faqs.html" },
+    { "src": "/privacy-policy", "dest": "/privacy-policy.html" },
+    { "src": "/terms-of-use", "dest": "/terms-of-use.html" },
+    { "src": "/about-us", "dest": "/about-us.html" },
+    { "src": "/grammar-resources", "dest": "/blog/index.html" },
+    { "src": "/blog", "dest": "/blog/index.html" }
   ]
 }
+
