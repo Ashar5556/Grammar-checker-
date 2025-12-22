@@ -2,34 +2,26 @@
   "redirects": [
     {
       "source": "/(.*)",
-      "has": [
-        {
-          "type": "host",
-          "value": "grammar-checker-smoky.vercel.app"
-        }
-      ],
+      "has": [{ "type": "host", "value": "grammar-checker-smoky.vercel.app" }],
       "destination": "https://grammarify.xyz/$1",
       "statusCode": 308
     },
     {
       "source": "/(.*)",
-      "has": [
-        {
-          "type": "host",
-          "value": "www.grammarify.xyz"
-        }
-      ],
+      "has": [{ "type": "host", "value": "www.grammarify.xyz" }],
       "destination": "https://grammarify.xyz/$1",
       "statusCode": 308
     }
   ],
   "rewrites": [
     { "source": "/faqs", "destination": "/faqs.html" },
+    { "source": "/about-us", "destination": "/about-us.html" },
     { "source": "/privacy-policy", "destination": "/privacy-policy.html" },
     { "source": "/terms-of-use", "destination": "/terms-of-use.html" },
-    { "source": "/about-us", "destination": "/about-us.html" },
+
     { "source": "/grammar-resources", "destination": "/blog/index.html" },
     { "source": "/blog", "destination": "/blog/index.html" }
   ]
 }
+
 
