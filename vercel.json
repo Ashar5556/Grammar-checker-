@@ -19,7 +19,7 @@
     { "source": "/privacy-policy", "destination": "/privacy-policy.html" },
     { "source": "/terms-of-use", "destination": "/terms-of-use.html" },
 
-    { "source": "/grammar-resources", "destination": "/blog/index.html" },
+    { "source": "/grammar-resources", "destination": "/blog" },
     { "source": "/blog", "destination": "/blog/index.html" }
   ]
 }
