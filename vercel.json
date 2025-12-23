@@ -1,6 +1,13 @@
 {
   "redirects": [
     {
+      "source": "/grammar-resources",
+      "destination": "/blog",
+      "statusCode": 308
+    }
+  ]
+  "redirects": [
+    {
       "source": "/(.*)",
       "has": [{ "type": "host", "value": "grammar-checker-smoky.vercel.app" }],
       "destination": "https://grammarify.xyz/$1",
@@ -12,7 +19,7 @@
       "destination": "https://grammarify.xyz/$1",
       "statusCode": 308
     }
-  ],
+  ]
   "rewrites": [
     { "source": "/faqs", "destination": "/faqs.html" },
     { "source": "/about-us", "destination": "/about-us.html" },
