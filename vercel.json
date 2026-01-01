@@ -1,11 +1,6 @@
 {
   "redirects": [
     {
-      "source": "/grammar-resources",
-      "destination": "/blog",
-      "statusCode": 308
-    },
-    {
       "source": "/(.*)",
       "has": [
         { "type": "host", "value": "grammar-checker-smoky.vercel.app" }
@@ -22,13 +17,20 @@
       "statusCode": 308
     }
   ],
+
   "rewrites": [
     { "source": "/faqs", "destination": "/faqs.html" },
-    { "source": "/about-us", "destination": "/about-us.html" },
+
+    { "source": "/privacy", "destination": "/privacy-policy.html" },
     { "source": "/privacy-policy", "destination": "/privacy-policy.html" },
+
+    { "source": "/terms", "destination": "/terms-of-use.html" },
     { "source": "/terms-of-use", "destination": "/terms-of-use.html" },
-    { "source": "/blog", "destination": "/blog/index.html" }
+
+    { "source": "/about", "destination": "/about-us.html" },
+    { "source": "/about-us", "destination": "/about-us.html" },
+
+    { "source": "/blog", "destination": "/blog/index.html" },
+    { "source": "/blog/(.*)", "destination": "/blog/$1" }
   ]
 }
-
-
