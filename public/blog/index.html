@@ -3,7 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grammarify Blog - English Learning Tips</title>
+    <title>Grammar Tips & Writing Resources - Grammarify Blog</title>
+    <meta name="description" content="Explore helpful articles on English grammar, writing improvement, and common mistakes. Free tips and resources from Grammarify's blog.">
+    <meta name="keywords" content="free grammar checker, online grammar checker, improve writing skills, common grammar mistakes, English grammar tips, AI grammar checker, writing improvement tool, grammar checker for students">
+    
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="https://grammarify.xyz/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://grammarify.xyz/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://grammarify.xyz/images/favicon-16x16.png">
+    <link rel="manifest" href="https://grammarify.xyz/images/site.webmanifest">
+    
+    <!-- Canonical -->
+    <link rel="canonical" href="https://grammarify.xyz/blog/">
+    
+    <!-- Open Graph / Universal Social Preview -->
+    <meta property="og:title" content="Grammarify – Improve Your English Grammar with AI">
+    <meta property="og:description" content="Improve your English grammar easily with smart AI tools on Grammarify.">
+    <meta property="og:image" content="https://grammarify.xyz/images/grammarify-social.png">
+    <meta property="og:url" content="https://grammarify.xyz">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Grammarify">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Grammarify – Improve Your English Grammar with AI">
+    <meta name="twitter:description" content="Improve your English grammar easily with smart AI tools on Grammarify.">
+    <meta name="twitter:image" content="https://grammarify.xyz/images/grammarify-social.png">
+    <meta name="twitter:url" content="https://grammarify.xyz">
+
+    <!-- Pinterest -->
+    <meta name="pinterest-rich-pin" content="true">
+    
+    <!-- General Meta -->
+    <meta name="author" content="Grammarify Team">
+    <meta name="language" content="English">
+    <meta name="robots" content="index, follow, max-image-preview:large">
     
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z4QTLCYPYT"></script>
@@ -22,28 +59,54 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
         
+        :root {
+            --bg-color: #f8f9fa;
+            --text-color: #333;
+            --card-bg: white;
+            --primary-color: #4a6fa5;
+            --secondary-color: #2c3e50;
+            --accent-color: #f1c40f;
+            --success-color: #2ecc71;
+            --error-color: #e74c3c;
+            --border-color: #e1e5e9;
+            --shadow: 0 2px 15px rgba(0,0,0,0.05);
+        }
+        
+        .dark-mode {
+            --bg-color: #1a1a2e;
+            --text-color: #e6e6e6;
+            --card-bg: #16213e;
+            --primary-color: #5d8fd4;
+            --secondary-color: #0f3460;
+            --accent-color: #f39c12;
+            --success-color: #27ae60;
+            --error-color: #c0392b;
+            --border-color: #2d3748;
+            --shadow: 0 2px 15px rgba(0,0,0,0.2);
+        }
+        
         body {
-            background: #f8f9fa;
-            color: #333;
+            background-color: var(--bg-color);
+            color: var(--text-color);
             line-height: 1.6;
+            transition: background-color 0.3s, color 0.3s;
+            overflow-x: hidden;
             min-height: 100vh;
         }
         
-        /* Header - Screenshot Style */
+        /* Header styles - INDEX.HTML WALA SAME */
         header {
-            background: linear-gradient(135deg, #4a6fa5, #2c3e50);
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
             color: white;
-            padding: 0.8rem 0;
+            padding: 1rem 0;
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            position: sticky;
-            top: 0;
-            z-index: 1000;
         }
         
         .container {
+            width: 100%;
             max-width: 1200px;
             margin: 0 auto;
-            padding: 0 20px;
+            padding: 0 15px;
         }
         
         .header-content {
@@ -54,43 +117,142 @@
         }
         
         .logo {
-            font-size: 1.4rem;
+            font-size: 1.5rem;
             font-weight: 700;
             display: flex;
             align-items: center;
-            color: white;
-            text-decoration: none;
         }
         
         .logo-icon {
             margin-right: 8px;
-            font-size: 1.4rem;
+            font-size: 1.5rem;
         }
-        
-        /* Navigation - Screenshot Style */
-        nav {
+
+        /* API Status Styles - INDEX.HTML WALA SAME */
+        .header-api-status {
             display: flex;
             align-items: center;
+            flex-direction: column;
+            margin-left: 10px;
+        }
+
+        .api-status-row {
+            display: flex;
+            align-items: center;
+            margin-bottom: 2px;
+        }
+
+        .api-status {
+            display: inline-flex;
+            align-items: center;
+            padding: 4px 8px;
+            border-radius: 12px;
+            font-size: 0.7rem;
+            font-weight: 600;
+        }
+
+        .api-status.online {
+            background-color: #27ae60;
+            color: white;
+        }
+
+        .api-status.offline {
+            background-color: #e74c3c;
+            color: white;
+        }
+
+        .api-status.checking {
+            background-color: #f39c12;
+            color: white;
+        }
+
+        .api-status .status-dot {
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            margin-right: 4px;
+            animation: pulse 2s infinite;
+        }
+
+        .api-status.online .status-dot {
+            background-color: #2ecc71;
+        }
+
+        .api-status.offline .status-dot {
+            background-color: #e74c3c;
+        }
+
+        .api-status.checking .status-dot {
+            background-color: #f39c12;
+        }
+
+        @keyframes pulse {
+            0% { opacity: 1; }
+            50% { opacity: 0.5; }
+            100% { opacity: 1; }
+        }
+
+        .test-api-btn {
+            background: transparent;
+            border: 1px solid rgba(255,255,255,0.5);
+            color: white;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 0.6rem;
+            cursor: pointer;
+            margin-left: 6px;
+            transition: all 0.3s;
+        }
+
+        .test-api-btn:hover {
+            background: rgba(255,255,255,0.2);
         }
         
-        .nav-links {
+        /* Navigation - INDEX.HTML WALA SAME */
+        nav ul {
             display: flex;
             list-style: none;
             align-items: center;
-            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
         }
         
-        .nav-links li a {
+        nav ul li {
+            margin: 5px 8px;
+        }
+        
+        nav ul li a {
             color: white;
             text-decoration: none;
             font-weight: 500;
-            font-size: 0.95rem;
-            transition: opacity 0.3s;
-            padding: 5px 0;
+            transition: color 0.3s;
+            font-size: 0.9rem;
+            white-space: nowrap;
         }
         
-        .nav-links li a:hover {
-            opacity: 0.9;
+        nav ul li a:hover {
+            color: var(--accent-color);
+        }
+        
+        /* Dark mode toggle - INDEX.HTML WALA SAME */
+        .theme-toggle {
+            background: transparent;
+            border: none;
+            color: white;
+            cursor: pointer;
+            font-size: 1.1rem;
+            padding: 5px;
+            border-radius: 50%;
+            width: 35px;
+            height: 35px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background-color 0.3s;
+        }
+        
+        .theme-toggle:hover {
+            background-color: rgba(255, 255, 255, 0.1);
         }
         
         /* Blog Header */
@@ -245,12 +407,12 @@
             cursor: not-allowed;
         }
         
-        /* Footer - Screenshot Style */
+        /* Footer - SCREENSHOT STYLE + 336x280 ads + Copyright */
         footer {
-            background: #2c3e50;
+            background-color: #2c3e50;
             color: white;
-            padding: 40px 0 20px;
-            margin-top: 50px;
+            padding: 25px 0 20px;
+            margin-top: 25px;
         }
         
         .footer-content {
@@ -264,25 +426,25 @@
         
         .footer-section {
             flex: 1;
-            min-width: 250px;
-            margin-bottom: 30px;
-            padding-right: 20px;
+            min-width: 200px;
+            margin-bottom: 20px;
+            padding-right: 15px;
         }
         
         .footer-section h3 {
-            margin-bottom: 15px;
-            font-size: 1.2rem;
+            margin-bottom: 12px;
+            font-size: 1.1rem;
             color: white;
         }
         
         .footer-section p {
-            color: rgba(255, 255, 255, 0.8);
+            color: #bdc3c7;
             line-height: 1.6;
-            margin-top: 10px;
         }
         
         .footer-section ul {
             list-style: none;
+            padding: 0;
         }
         
         .footer-section ul li {
@@ -290,23 +452,59 @@
         }
         
         .footer-section ul li a {
-            color: rgba(255, 255, 255, 0.8);
+            color: #bdc3c7;
             text-decoration: none;
             transition: color 0.3s;
-            font-size: 0.95rem;
+            font-size: 0.9rem;
         }
         
         .footer-section ul li a:hover {
             color: white;
         }
         
+        /* Footer Ad Container - 336x280 */
+        .footer-ad-container {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px auto;
+            text-align: center;
+            width: 100%;
+            max-width: 1200px;
+        }
+        
+        .footer-ad-label {
+            font-size: 12px;
+            color: #bdc3c7;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .footer-ad-content {
+            width: 100%;
+            height: 280px; /* 336x280 ke liye height 280px */
+            background: rgba(255, 255, 255, 0.05);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #bdc3c7;
+            font-weight: 500;
+            border-radius: 4px;
+            border: 2px dashed rgba(255, 255, 255, 0.2);
+        }
+        
         .copyright {
             text-align: center;
-            margin-top: 30px;
-            padding-top: 20px;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-            color: rgba(255, 255, 255, 0.7);
-            font-size: 14px;
+            margin-top: 25px;
+            padding-top: 15px;
+            border-top: 1px solid #34495e;
+            color: #bdc3c7;
+            font-size: 13px;
+            line-height: 1.4;
+            max-width: 1200px;
+            margin: 25px auto 0;
+            padding: 0 20px;
         }
         
         /* Error Message */
@@ -343,7 +541,7 @@
                 text-align: center;
             }
             
-            .nav-links {
+            nav ul {
                 justify-content: center;
                 flex-wrap: wrap;
                 gap: 15px;
@@ -355,6 +553,10 @@
             
             .footer-section {
                 padding-right: 0;
+            }
+            
+            .footer-ad-content {
+                height: 280px;
             }
         }
         
@@ -379,27 +581,46 @@
                 padding: 6px 12px;
                 font-size: 0.9rem;
             }
+            
+            .footer-ad-content {
+                height: 280px;
+            }
         }
     </style>
 </head>
 <body>
-    <!-- Header - Screenshot Style -->
+    <!-- Header - INDEX.HTML WALA SAME TOP -->
     <header>
         <div class="container">
             <div class="header-content">
-                <a href="/index.html" class="logo">
+                <div class="logo">
                     <span class="logo-icon">✓</span>
                     <span>Grammarify</span>
-                </a>
-                
+                    <div class="header-api-status">
+                        <div class="api-status-row">
+                            <span class="api-status checking" id="apiStatus">
+                                <span class="status-dot"></span>
+                                AI Powered
+                            </span>
+                        </div>
+                        <div class="api-status-row">
+                            <button class="test-api-btn" id="testApiBtn" title="Test API Connection">Test Connection</button>
+                        </div>
+                    </div>
+                </div>
                 <nav>
-                    <ul class="nav-links">
-                        <li><a href="/index.html">Home</a></li>
-                        <li><a href="/blog">Grammar Resources</a></li>
-                        <li><a href="/faqs.html">FAQs</a></li>
-                        <li><a href="/about-us.html">About Us</a></li>
-                        <li><a href="/privacy-policy.html">Privacy Policy</a></li>
-                        <li><a href="/terms-of-use.html">Terms of Use</a></li>
+                    <ul>
+                        <li><a href="https://grammarify.xyz/">Home</a></li>
+                        <li><a href="https://grammarify.xyz/blog/">Blog</a></li>
+                        <li><a href="https://grammarify.xyz/faqs">FAQs</a></li>
+                        <li><a href="https://grammarify.xyz/about-us.html">About Us</a></li>
+                        <li><a href="https://grammarify.xyz/privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="https://grammarify.xyz/terms-of-use.html">Terms of Use</a></li>
+                        <li>
+                            <button class="theme-toggle" id="themeToggle" title="Toggle dark mode">
+                                🌙
+                            </button>
+                        </li>
                     </ul>
                 </nav>
             </div>
@@ -429,45 +650,69 @@
         </div>
     </main>
 
-    <!-- Footer - Screenshot Style -->
+    <!-- Footer - SCREENSHOT STYLE + 336x280 ads + Copyright -->
     <footer>
         <div class="footer-content">
+            <!-- Grammarify Section -->
             <div class="footer-section">
                 <h3>Grammarify</h3>
                 <p>Free online grammar checker to detect and fix grammar, punctuation, and sentence structure errors.</p>
             </div>
             
+            <!-- Quick Links Section - Screenshot ke jaisa -->
             <div class="footer-section">
                 <h3>Quick Links</h3>
                 <ul>
-                    <li><a href="/index.html">Home</a></li>
-                    <li><a href="/blog">Grammar Resources</a></li>
-                    <li><a href="/faqs.html">FAQs</a></li>
-                    <li><a href="/about-us.html">About Us</a></li>
+                    <li><a href="https://grammarify.xyz/">Home</a></li>
+                    <li><a href="https://grammarify.xyz/blog/">Blog</a></li>
+                    <li><a href="https://grammarify.xyz/faqs">FAQs</a></li>
+                    <li><a href="https://grammarify.xyz/about-us.html">About Us</a></li>
                 </ul>
             </div>
             
+            <!-- Legal Section - Screenshot ke jaisa -->
             <div class="footer-section">
-                <h3>Contact Us</h3>
+                <h3>Legal</h3>
                 <ul>
-                    <li><a href="mailto:knawz500@gmail.com">knawz500@gmail.com</a></li>
-                    <li>Free Grammar Checker</li>
-                    <li>No Login Required</li>
+                    <li><a href="https://grammarify.xyz/privacy-policy.html">Privacy Policy</a></li>
+                    <li><a href="https://grammarify.xyz/terms-of-use.html">Terms of Use</a></li>
+                    <li><a href="mailto:knawz500@gmail.com">Contact Support</a></li>
                 </ul>
             </div>
         </div>
         
+        <!-- Footer Ad Space - 336x280 -->
+        <div class="footer-ad-container">
+            <div class="footer-ad-label">ADVERTISEMENT</div>
+            <div class="footer-ad-content">
+                Ad Space - 336x280
+            </div>
+        </div>
+        
+        <!-- Copyright - Pehle wale code jaisa -->
         <div class="copyright">
-            &copy; 2025 Grammarify. All rights reserved. | Free Online Grammar Checker
+            © 2025-12-22 Grammarify. All rights reserved. | Free Online Grammar Checker
         </div>
     </footer>
 
     <script>
+        // POSTS.JSON SE CONNECT KARNE WALA SYSTEM
         // Load blogs from posts.json
         async function loadBlogs() {
             try {
-                const response = await fetch("/blog/posts.json");
+                const response = await fetch("posts.json");
+                
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                
                 const blogs = await response.json();
+                console.log('Blogs loaded from posts.json');
+                
+                // Validate the JSON structure
+                if (!Array.isArray(blogs)) {
+                    throw new Error('Invalid posts.json format: Expected an array');
+                }
                 
                 // Sort by date (newest first)
                 blogs.sort((a, b) => new Date(b.date) - new Date(a.date));
@@ -476,9 +721,9 @@
                 setupCategories(blogs);
                 
             } catch (error) {
-                console.error('Error loading blogs:', error);
+                console.error('Error loading blogs from posts.json:', error);
                 document.getElementById('blogContainer').innerHTML = 
-                    '<div class="error-message">Error loading blogs. Check posts.json file.</div>';
+                    '<div class="error-message">Error loading blogs. Please check posts.json file format.</div>';
             }
         }
         
@@ -486,29 +731,30 @@
             const container = document.getElementById('blogContainer');
             
             if (blogs.length === 0) {
-                container.innerHTML = '<div class="error-message">No blogs found.</div>';
+                container.innerHTML = '<div class="error-message">No blogs found in posts.json file.</div>';
+                document.getElementById('loadBtn').style.display = 'none';
                 return;
             }
             
             container.innerHTML = blogs.map(blog => `
                 <div class="blog-card">
-                    ${blog.image ? `
-                        <img src="${blog.image}" alt="${blog.title}" class="blog-img">
-                    ` : `<div style="height:200px; background:linear-gradient(135deg, #4f46e5, #3730a3);"></div>`}
+                    <div style="height:200px; background:linear-gradient(135deg, #4f46e5, #3730a3); display: flex; align-items: center; justify-content: center; color: white; font-size: 3rem;">
+                        📝
+                    </div>
                     
                     <div class="blog-content">
                         <span class="blog-cat">${blog.category || 'General'}</span>
                         <h3 class="blog-title">
-                            <a href="${blog.url}">${blog.title}</a>
+                            ${blog.url ? `<a href="${blog.url}" target="_blank">${blog.title || 'Untitled'}</a>` : blog.title || 'Untitled'}
                         </h3>
-                        <p class="blog-desc">${blog.description}</p>
+                        <p class="blog-desc">${blog.description || 'No description available'}</p>
                         
                         <div class="blog-meta">
                             <span>📅 ${formatDate(blog.date)}</span>
                             ${blog.readTime ? `<span>⏱️ ${blog.readTime}</span>` : ''}
                         </div>
                         
-                        <a href="${blog.url}" class="read-more">Read Article →</a>
+                        ${blog.url ? `<a href="${blog.url}" target="_blank" class="read-more">Read Article →</a>` : ''}
                     </div>
                 </div>
             `).join('');
@@ -542,8 +788,11 @@
             });
             
             // Load all blogs and filter
-            fetch("/blog/posts.json")
-                .then(res => res.json())
+            fetch("posts.json")
+                .then(res => {
+                    if (!res.ok) throw new Error('Failed to load posts.json');
+                    return res.json();
+                })
                 .then(blogs => {
                     if (category === 'All') {
                         displayBlogs(blogs);
@@ -551,20 +800,81 @@
                         const filtered = blogs.filter(blog => blog.category === category);
                         displayBlogs(filtered);
                     }
+                })
+                .catch(error => {
+                    console.error('Error filtering blogs:', error);
+                    document.getElementById('blogContainer').innerHTML = 
+                        '<div class="error-message">Error loading filtered blogs. Please check posts.json file.</div>';
                 });
         }
         
         function formatDate(dateStr) {
-            const date = new Date(dateStr);
-            return date.toLocaleDateString('en-IN', {
-                day: 'numeric',
-                month: 'short',
-                year: 'numeric'
-            });
+            try {
+                if (!dateStr) return 'No date';
+                const date = new Date(dateStr);
+                return date.toLocaleDateString('en-IN', {
+                    day: 'numeric',
+                    month: 'short',
+                    year: 'numeric'
+                });
+            } catch (error) {
+                return dateStr || 'Invalid date';
+            }
         }
         
-        // Load blogs on page load
-        document.addEventListener('DOMContentLoaded', loadBlogs);
+        // Main application
+        document.addEventListener('DOMContentLoaded', function() {
+            // Load blogs from posts.json
+            loadBlogs();
+            
+            // Test API button (minimal functionality for blog page)
+            const testApiBtn = document.getElementById('testApiBtn');
+            const themeToggle = document.getElementById('themeToggle');
+            
+            // Test API button
+            testApiBtn.addEventListener('click', function() {
+                testApiBtn.disabled = true;
+                testApiBtn.textContent = 'Testing...';
+                
+                setTimeout(() => {
+                    testApiBtn.disabled = false;
+                    testApiBtn.textContent = 'Test Connection';
+                    alert('API connection test completed. This is a blog page demonstration.');
+                }, 1000);
+            });
+
+            // Dark mode toggle
+            themeToggle.addEventListener('click', function() {
+                document.body.classList.toggle('dark-mode');
+                
+                // Update the toggle button icon
+                if (document.body.classList.contains('dark-mode')) {
+                    themeToggle.innerHTML = '☀️';
+                    themeToggle.title = 'Switch to light mode';
+                } else {
+                    themeToggle.innerHTML = '🌙';
+                    themeToggle.title = 'Switch to dark mode';
+                }
+                
+                // Save preference to localStorage
+                if (document.body.classList.contains('dark-mode')) {
+                    localStorage.setItem('darkMode', 'enabled');
+                } else {
+                    localStorage.setItem('darkMode', 'disabled');
+                }
+            });
+            
+            // Check for saved dark mode preference
+            if (localStorage.getItem('darkMode') === 'enabled') {
+                document.body.classList.add('dark-mode');
+                themeToggle.innerHTML = '☀️';
+                themeToggle.title = 'Switch to light mode';
+            } else {
+                themeToggle.innerHTML = '🌙';
+                themeToggle.title = 'Switch to dark mode';
+            }
+        });
     </script>
 </body>
 </html>
+ 
