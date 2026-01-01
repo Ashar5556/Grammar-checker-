@@ -700,7 +700,7 @@
         // Load blogs from posts.json
         async function loadBlogs() {
             try {
-                const response = await fetch("posts.json");
+                const response = await fetch("/blog/posts.json");
                 
                 if (!response.ok) {
                     throw new Error(`HTTP error! status: ${response.status}`);
@@ -788,7 +788,7 @@
             });
             
             // Load all blogs and filter
-            fetch("posts.json")
+            fetch("/blog/posts.json")
                 .then(res => {
                     if (!res.ok) throw new Error('Failed to load posts.json');
                     return res.json();
