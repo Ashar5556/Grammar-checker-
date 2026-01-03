@@ -1,3 +1,4 @@
+
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
@@ -6,11 +7,15 @@
   </url>
 
   <url>
-    <loc>https://grammarify.xyz/grammar-resources</loc>
+    <loc>https://grammarify.xyz/blog</loc>
   </url>
 
   <url>
-    <loc>https://grammarify.xyz/blog/2025-12-01-how-to-use-grammarify-free-grammar-checker.html</loc>
+    <loc>https://grammarify.xyz/blog/2025-12-01-01-how-to-use-grammarify-free-grammar-checker</loc>
+  </url>
+
+  <url>
+    <loc>https://grammarify.xyz/blog/2026-01-03-02-common-grammar-mistakes-in-2026</loc>
   </url>
 
   <url>
