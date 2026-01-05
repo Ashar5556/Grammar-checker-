@@ -19,18 +19,38 @@
   ],
 
   "rewrites": [
-    { "source": "/faqs", "destination": "/faqs.html" },
+    /* grammar-recourses */
+    { "source": "/grammar-recourses", "destination": "/blog/index.html" },
 
+    /* BLOG main page */
+    { "source": "/blog", "destination": "/blog/index.html" },
+    { "source": "/blog.html", "destination": "/blog/index.html" },
+
+    /* BLOG posts - scalable with slug */
+    { "source": "/blog/:slug", "destination": "/blog/:slug.html" },
+
+    /* FAQS */
+    { "source": "/faqs", "destination": "/faqs.html" },
+    { "source": "/faqs.html", "destination": "/faqs.html" },
+
+    /* PRIVACY POLICY */
     { "source": "/privacy", "destination": "/privacy-policy.html" },
     { "source": "/privacy-policy", "destination": "/privacy-policy.html" },
+    { "source": "/privacy-policy.html", "destination": "/privacy-policy.html" },
+    { "source": "/privacy%20policy", "destination": "/privacy-policy.html" },
 
-    { "source": "/terms", "destination": "/terms-of-use.html" },
-    { "source": "/terms-of-use", "destination": "/terms-of-use.html" },
-
+    /* ABOUT */
     { "source": "/about", "destination": "/about-us.html" },
     { "source": "/about-us", "destination": "/about-us.html" },
+    { "source": "/about-us.html", "destination": "/about-us.html" },
+    { "source": "/about%20us", "destination": "/about-us.html" },
 
-    { "source": "/blog", "destination": "/blog/index.html" },
-    { "source": "/blog/(.*)", "destination": "/blog/$1" }
+    /* TERMS */
+    { "source": "/term", "destination": "/terms-of-use.html" },
+    { "source": "/terms", "destination": "/terms-of-use.html" },
+    { "source": "/terms-of", "destination": "/terms-of-use.html" },
+    { "source": "/terms-of-use", "destination": "/terms-of-use.html" },
+    { "source": "/terms-of-use.html", "destination": "/terms-of-use.html" },
+    { "source": "/terms%20of%20use", "destination": "/terms-of-use.html" }
   ]
 }
