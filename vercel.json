@@ -1,6 +1,11 @@
 {
   "redirects": [
     {
+      "source": "/grammar-resources",
+      "destination": "/blog",
+      "statusCode": 301
+    },
+    {
       "source": "/(.*)",
       "has": [
         { "type": "host", "value": "grammar-checker-smoky.vercel.app" }
@@ -19,11 +24,8 @@
   ],
 
   "rewrites": [
-    { "source": "/grammar-recourses", "destination": "/blog/index.html" },
-
     { "source": "/blog", "destination": "/blog/index.html" },
     { "source": "/blog.html", "destination": "/blog/index.html" },
-    { "source": "/blog/:slug", "destination": "/blog/:slug.html" },
 
     { "source": "/faqs", "destination": "/faqs.html" },
     { "source": "/faqs.html", "destination": "/faqs.html" },
@@ -46,3 +48,4 @@
     { "source": "/terms(.*)", "destination": "/terms-of-use.html" }
   ]
 }
+
