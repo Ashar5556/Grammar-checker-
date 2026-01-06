@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grammar Tips & Writing Resources - Grammarify Blog</title>
+    <meta name="description" content="Explore helpful articles on English grammar, writing improvement, and common mistakes. Free tips and resources from Grammarify's blog.">
+    <meta name="keywords" content="free grammar checker, online grammar checker, improve writing skills, common grammar mistakes, English grammar tips, AI grammar checker, writing improvement tool, grammar checker for students">
+    
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="https://grammarify.xyz/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://grammarify.xyz/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://grammarify.xyz/images/favicon-16x16.png">
+    <link rel="manifest" href="https://grammarify.xyz/images/site.webmanifest">
+    
+    <!-- Canonical -->
+    <link rel="canonical" href="https://grammarify.xyz/blog/">
+    
+    <!-- Open Graph / Universal Social Preview -->
+    <meta property="og:title" content="Grammarify – Improve Your English Grammar with AI">
+    <meta property="og:description" content="Improve your English grammar easily with smart AI tools on Grammarify.">
+    <meta property="og:image" content="https://grammarify.xyz/images/grammarify-social.png">
+    <meta property="og:url" content="https://grammarify.xyz">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Grammarify">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Grammarify – Improve Your English Grammar with AI">
+    <meta name="twitter:description" content="Improve your English grammar easily with smart AI tools on Grammarify.">
+    <meta name="twitter:image" content="https://grammarify.xyz/images/grammarify-social.png">
+    <meta name="twitter:url" content="https://grammarify.xyz">
+
+    <!-- Pinterest -->
+    <meta name="pinterest-rich-pin" content="true">
+    
+    <!-- General Meta -->
+    <meta name="author" content="Grammarify Team">
+    <meta name="language" content="English">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z4QTLCYPYT"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-Z4QTLCYPYT');
+    </script>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        :root {
+            --bg-color: #f8f9fa;
+            --text-color: #333;
+            --card-bg: white;
+            --primary-color: #4a6fa5;
+            --secondary-color: #2c3e50;
+            --accent-color: #f1c40f;
+            --success-color: #2ecc71;
+            --error-color: #e74c3c;
+            --border-color: #e1e5e9;
+            --shadow: 0 2px 15px rgba(0,0,0,0.05);
+        }
+        
+        .dark-mode {
+            --bg-color: #1a1a2e;
+            --text-color: #e6e6e6;
+            --card-bg: #16213e;
+            --primary-color: #5d8fd4;
+            --secondary-color: #0f3460;
+            --accent-color: #f39c12;
+            --success-color: #27ae60;
+            --error-color: #c0392b;
+            --border-color: #2d3748;
+            --shadow: 0 2px 15px rgba(0,0,0,0.2);
+        }
+        
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            transition: background-color 0.3s, color 0.3s;
+            overflow-x: hidden;
+            min-height: 100vh;
+        }
+        
+        /* Header styles - INDEX.HTML WALA SAME */
+        header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 1rem 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo-icon {
+            margin-right: 8px;
+            font-size: 1.5rem;
+        }
+
+        /* API Status Styles - INDEX.HTML WALA SAME */
+        .header-api-status {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            margin-left: 10px;
+        }
+
+        .api-status-row {
+            display: flex;
+            align-items: center;
+            margin-bottom: 2px;
+        }
+
+        .api-status {
+            display: inline-flex;
+            align-items: center;
+            padding: 4px 8px;
+            border-radius: 12px;
+            font-size: 0.7rem;
+            font-weight: 600;
+        }
+
+        .api-status.online {
+            background-color: #27ae60;
+            color: white;
+        }
+
+        .api-status.offline {
+            background-color: #e74c3c;
+            color: white;
+        }
+
+        .api-status.checking {
+            background-color: #f39c12;
+            color: white;
+        }
+
+        .api-status .status-dot {
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            margin-right: 4px;
+            animation: pulse 2s infinite;
+        }
+
+        .api-status.online .status-dot {
+            background-color: #2ecc71;
+        }
+
+        .api-status.offline .status-dot {
+            background-color: #e74c3c;
+        }
+
+        .api-status.checking .status-dot {
+            background-color: #f39c12;
+        }
+
+        @keyframes pulse {
+            0% { opacity: 1; }
+            50% { opacity: 0.5; }
+            100% { opacity: 1; }
+        }
+
+        .test-api-btn {
+            background: transparent;
+            border: 1px solid rgba(255,255,255,0.5);
+            color: white;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 0.6rem;
+            cursor: pointer;
+            margin-left: 6px;
+            transition: all 0.3s;
+        }
+
+        .test-api-btn:hover {
+            background: rgba(255,255,255,0.2);
+        }
+        
+        /* Navigation - INDEX.HTML WALA SAME */
+        nav ul {
+            display: flex;
+            list-style: none;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        
+        nav ul li {
+            margin: 5px 8px;
+        }
+        
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+            font-size: 0.9rem;
+            white-space: nowrap;
+        }
+        
+        nav ul li a:hover {
+            color: var(--accent-color);
+        }
+        
+        /* Dark mode toggle - INDEX.HTML WALA SAME */
+        .theme-toggle {
+            background: transparent;
+            border: none;
+            color: white;
+            cursor: pointer;
+            font-size: 1.1rem;
+            padding: 5px;
+            border-radius: 50%;
+            width: 35px;
+            height: 35px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background-color 0.3s;
+        }
+        
+        .theme-toggle:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+        
+        /* Blog Header */
+        .blog-header {
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            color: white;
+            padding: 50px 0;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .blog-header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        
+        /* Categories */
+        .categories {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+        
+        .cat-btn {
+            padding: 8px 16px;
+            background: white;
+            border: 2px solid #ddd;
+            border-radius: 20px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: all 0.3s;
+        }
+        
+        .cat-btn.active {
+            background: #4f46e5;
+            color: white;
+            border-color: #4f46e5;
+        }
+        
+        .cat-btn:hover {
+            border-color: #4f46e5;
+            color: #4f46e5;
+        }
+        
+        /* Blog Grid */
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+        
+        .blog-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        
+        .blog-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .blog-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            display: block;
+        }
+        
+        .blog-content {
+            padding: 20px;
+        }
+        
+        .blog-cat {
+            display: inline-block;
+            background: #eef2ff;
+            color: #4f46e5;
+            padding: 4px 10px;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        
+        .blog-title {
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+            color: #1f2937;
+            line-height: 1.4;
+        }
+        
+        .blog-title a {
+            color: inherit;
+            text-decoration: none;
+        }
+        
+        .blog-title a:hover {
+            color: #4f46e5;
+        }
+        
+        .blog-desc {
+            color: #666;
+            margin-bottom: 15px;
+            line-height: 1.5;
+        }
+        
+        .blog-meta {
+            display: flex;
+            justify-content: space-between;
+            color: #888;
+            font-size: 0.85rem;
+            border-top: 1px solid #eee;
+            padding-top: 15px;
+            margin-top: 15px;
+        }
+        
+        .read-more {
+            color: #4f46e5;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 10px;
+        }
+        
+        /* Load More */
+        .load-more {
+            text-align: center;
+            margin: 40px 0;
+        }
+        
+        #loadBtn {
+            background: #4f46e5;
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            font-weight: bold;
+        }
+        
+        #loadBtn:hover {
+            background: #3730a3;
+        }
+        
+        #loadBtn:disabled {
+            background: #999;
+            cursor: not-allowed;
+        }
+        
+        /* Footer - SCREENSHOT STYLE + 336x280 ads + Copyright */
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            padding: 25px 0 20px;
+            margin-top: 25px;
+        }
+        
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .footer-section {
+            flex: 1;
+            min-width: 200px;
+            margin-bottom: 20px;
+            padding-right: 15px;
+        }
+        
+        .footer-section h3 {
+            margin-bottom: 12px;
+            font-size: 1.1rem;
+            color: white;
+        }
+        
+        .footer-section p {
+            color: #bdc3c7;
+            line-height: 1.6;
+        }
+        
+        .footer-section ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .footer-section ul li {
+            margin-bottom: 8px;
+        }
+        
+        .footer-section ul li a {
+            color: #bdc3c7;
+            text-decoration: none;
+            transition: color 0.3s;
+            font-size: 0.9rem;
+        }
+        
+        .footer-section ul li a:hover {
+            color: white;
+        }
+        
+        /* Footer Ad Container - 336x280 */
+        .footer-ad-container {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px auto;
+            text-align: center;
+            width: 100%;
+            max-width: 1200px;
+        }
+        
+        .footer-ad-label {
+            font-size: 12px;
+            color: #bdc3c7;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .footer-ad-content {
+            width: 100%;
+            height: 280px; /* 336x280 ke liye height 280px */
+            background: rgba(255, 255, 255, 0.05);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #bdc3c7;
+            font-weight: 500;
+            border-radius: 4px;
+            border: 2px dashed rgba(255, 255, 255, 0.2);
+        }
+        
+        .copyright {
+            text-align: center;
+            margin-top: 25px;
+            padding-top: 15px;
+            border-top: 1px solid #34495e;
+            color: #bdc3c7;
+            font-size: 13px;
+            line-height: 1.4;
+            max-width: 1200px;
+            margin: 25px auto 0;
+            padding: 0 20px;
+        }
+        
+        /* Error Message */
+        .error-message {
+            text-align: center;
+            padding: 40px;
+            color: #e74c3c;
+            background: white;
+            border-radius: 10px;
+            margin: 20px 0;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+        
+        /* Loading */
+        .loading {
+            text-align: center;
+            padding: 40px;
+            color: #666;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .blog-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .blog-header h1 {
+                font-size: 2rem;
+            }
+            
+            .header-content {
+                flex-direction: column;
+                gap: 15px;
+                text-align: center;
+            }
+            
+            nav ul {
+                justify-content: center;
+                flex-wrap: wrap;
+                gap: 15px;
+            }
+            
+            .footer-content {
+                flex-direction: column;
+            }
+            
+            .footer-section {
+                padding-right: 0;
+            }
+            
+            .footer-ad-content {
+                height: 280px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 15px;
+            }
+            
+            .blog-header {
+                padding: 30px 0;
+            }
+            
+            .blog-header h1 {
+                font-size: 1.8rem;
+            }
+            
+            .categories {
+                gap: 5px;
+            }
+            
+            .cat-btn {
+                padding: 6px 12px;
+                font-size: 0.9rem;
+            }
+            
+            .footer-ad-content {
+                height: 280px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header - INDEX.HTML WALA SAME TOP -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <span class="logo-icon">✓</span>
+                    <span>Grammarify</span>
+                    <div class="header-api-status">
+                        <div class="api-status-row">
+                            <span class="api-status checking" id="apiStatus">
+                                <span class="status-dot"></span>
+                                AI Powered
+                            </span>
+                        </div>
+                        <div class="api-status-row">
+                            <button class="test-api-btn" id="testApiBtn" title="Test API Connection">Test Connection</button>
+                        </div>
+                    </div>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="https://grammarify.xyz/">Home</a></li>
+                        <li><a href="https://grammarify.xyz/blog/">Blog</a></li>
+                        <li><a href="https://grammarify.xyz/faqs">FAQs</a></li>
+                        <li><a href="https://grammarify.xyz/about-us.html">About Us</a></li>
+                        <li><a href="https://grammarify.xyz/privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="https://grammarify.xyz/terms-of-use.html">Terms of Use</a></li>
+                        <li>
+                            <button class="theme-toggle" id="themeToggle" title="Toggle dark mode">
+                                🌙
+                            </button>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Blog Header -->
+    <section class="blog-header">
+        <div class="container">
+            <h1>📚 Grammarify Blog</h1>
+            <p>English grammar, vocabulary and writing tips</p>
+        </div>
+    </section>
+    
+    <main class="container">
+        <!-- Categories Filter -->
+        <div class="categories" id="catContainer"></div>
+        
+        <!-- Blog Grid -->
+        <div class="blog-grid" id="blogContainer">
+            <div class="loading">Loading blogs...</div>
+        </div>
+        
+        <!-- Load More Button -->
+        <div class="load-more">
+            <button id="loadBtn">Load More Blogs</button>
+        </div>
+    </main>
+
+    <!-- Footer - SCREENSHOT STYLE + 336x280 ads + Copyright -->
+    <footer>
+        <div class="footer-content">
+            <!-- Grammarify Section -->
+            <div class="footer-section">
+                <h3>Grammarify</h3>
+                <p>Free online grammar checker to detect and fix grammar, punctuation, and sentence structure errors.</p>
+            </div>
+            
+            <!-- Quick Links Section - Screenshot ke jaisa -->
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="https://grammarify.xyz/">Home</a></li>
+                    <li><a href="https://grammarify.xyz/blog/">Blog</a></li>
+                    <li><a href="https://grammarify.xyz/faqs">FAQs</a></li>
+                    <li><a href="https://grammarify.xyz/about-us.html">About Us</a></li>
+                </ul>
+            </div>
+            
+            <!-- Legal Section - Screenshot ke jaisa -->
+            <div class="footer-section">
+                <h3>Legal</h3>
+                <ul>
+                    <li><a href="https://grammarify.xyz/privacy-policy.html">Privacy Policy</a></li>
+                    <li><a href="https://grammarify.xyz/terms-of-use.html">Terms of Use</a></li>
+                    <li><a href="mailto:knawz500@gmail.com">Contact Support</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Footer Ad Space - 336x280 -->
+        <div class="footer-ad-container">
+            <div class="footer-ad-label">ADVERTISEMENT</div>
+            <div class="footer-ad-content">
+                Ad Space - 336x280
+            </div>
+        </div>
+        
+        <!-- Copyright - Pehle wale code jaisa -->
+        <div class="copyright">
+            © 2025-12-22 Grammarify. All rights reserved. | Free Online Grammar Checker
+        </div>
+    </footer>
+
+    <script>
+        // POSTS.JSON SE CONNECT KARNE WALA SYSTEM
+        // Load blogs from posts.json
+        async function loadBlogs() {
+            try {
+                const response = await fetch("/blog/posts.json");
+                
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                
+                const blogs = await response.json();
+                console.log('Blogs loaded from posts.json');
+                
+                // Validate the JSON structure
+                if (!Array.isArray(blogs)) {
+                    throw new Error('Invalid posts.json format: Expected an array');
+                }
+                
+                // Sort by date (newest first)
+                blogs.sort((a, b) => new Date(b.date) - new Date(a.date));
+                
+                displayBlogs(blogs);
+                setupCategories(blogs);
+                
+            } catch (error) {
+                console.error('Error loading blogs from posts.json:', error);
+                document.getElementById('blogContainer').innerHTML = 
+                    '<div class="error-message">Error loading blogs. Please check posts.json file format.</div>';
+            }
+        }
+        
+        function displayBlogs(blogs) {
+            const container = document.getElementById('blogContainer');
+            
+            if (blogs.length === 0) {
+                container.innerHTML = '<div class="error-message">No blogs found in posts.json file.</div>';
+                document.getElementById('loadBtn').style.display = 'none';
+                return;
+            }
+            
+            container.innerHTML = blogs.map(blog => `
+                <div class="blog-card">
+                    <img 
+                        src="${blog.image || 'https://grammarify.xyz/images/default-blog.webp'}"
+                        alt="${blog.title || 'Blog image'}"
+                        class="blog-img"
+                        loading="lazy"
+                    >
+                    
+                    <div class="blog-content">
+                        <span class="blog-cat">${blog.category || 'General'}</span>
+                        <h3 class="blog-title">
+                            ${blog.url ? `<a href="${blog.url}" target="_blank">${blog.title || 'Untitled'}</a>` : blog.title || 'Untitled'}
+                        </h3>
+                        <p class="blog-desc">${blog.description || 'No description available'}</p>
+                        
+                        <div class="blog-meta">
+                            <span>📅 ${formatDate(blog.date)}</span>
+                            ${blog.readTime ? `<span>⏱️ ${blog.readTime}</span>` : ''}
+                        </div>
+                        
+                        ${blog.url ? `<a href="${blog.url}" target="_blank" class="read-more">Read Article →</a>` : ''}
+                    </div>
+                </div>
+            `).join('');
+            
+            // Hide load more button since we're showing all
+            document.getElementById('loadBtn').style.display = 'none';
+        }
+        
+        function setupCategories(blogs) {
+            const categories = ['All'];
+            blogs.forEach(blog => {
+                if (blog.category && !categories.includes(blog.category)) {
+                    categories.push(blog.category);
+                }
+            });
+            
+            const catContainer = document.getElementById('catContainer');
+            catContainer.innerHTML = categories.map(cat => `
+                <button class="cat-btn ${cat === 'All' ? 'active' : ''}" 
+                        onclick="filterByCategory('${cat}')">
+                    ${cat}
+                </button>
+            `).join('');
+        }
+        
+        function filterByCategory(category) {
+            // Update active button
+            document.querySelectorAll('.cat-btn').forEach(btn => {
+                btn.classList.remove('active');
+                if (btn.textContent === category) btn.classList.add('active');
+            });
+            
+            // Load all blogs and filter
+            fetch("/blog/posts.json")
+                .then(res => {
+                    if (!res.ok) throw new Error('Failed to load posts.json');
+                    return res.json();
+                })
+                .then(blogs => {
+                    if (category === 'All') {
+                        displayBlogs(blogs);
+                    } else {
+                        const filtered = blogs.filter(blog => blog.category === category);
+                        displayBlogs(filtered);
+                    }
+                })
+                .catch(error => {
+                    console.error('Error filtering blogs:', error);
+                    document.getElementById('blogContainer').innerHTML = 
+                        '<div class="error-message">Error loading filtered blogs. Please check posts.json file.</div>';
+                });
+        }
+        
+        function formatDate(dateStr) {
+            try {
+                if (!dateStr) return 'No date';
+                const date = new Date(dateStr);
+                return date.toLocaleDateString('en-IN', {
+                    day: 'numeric',
+                    month: 'short',
+                    year: 'numeric'
+                });
+            } catch (error) {
+                return dateStr || 'Invalid date';
+            }
+        }
+        
+        // Main application
+        document.addEventListener('DOMContentLoaded', function() {
+            // Load blogs from posts.json
+            loadBlogs();
+            
+            // Test API button (minimal functionality for blog page)
+            const testApiBtn = document.getElementById('testApiBtn');
+            const themeToggle = document.getElementById('themeToggle');
+            
+            // Test API button
+            testApiBtn.addEventListener('click', function() {
+                testApiBtn.disabled = true;
+                testApiBtn.textContent = 'Testing...';
+                
+                setTimeout(() => {
+                    testApiBtn.disabled = false;
+                    testApiBtn.textContent = 'Test Connection';
+                    alert('API connection test completed. This is a blog page demonstration.');
+                }, 1000);
+            });
+
+            // Dark mode toggle
+            themeToggle.addEventListener('click', function() {
+                document.body.classList.toggle('dark-mode');
+                
+                // Update the toggle button icon
+                if (document.body.classList.contains('dark-mode')) {
+                    themeToggle.innerHTML = '☀️';
+                    themeToggle.title = 'Switch to light mode';
+                } else {
+                    themeToggle.innerHTML = '🌙';
+                    themeToggle.title = 'Switch to dark mode';
+                }
+                
+                // Save preference to localStorage
+                if (document.body.classList.contains('dark-mode')) {
+                    localStorage.setItem('darkMode', 'enabled');
+                } else {
+                    localStorage.setItem('darkMode', 'disabled');
+                }
+            });
+            
+            // Check for saved dark mode preference
+            if (localStorage.getItem('darkMode') === 'enabled') {
+                document.body.classList.add('dark-mode');
+                themeToggle.innerHTML = '☀️';
+                themeToggle.title = 'Switch to light mode';
+            } else {
+                themeToggle.innerHTML = '🌙';
+                themeToggle.title = 'Switch to dark mode';
+            }
+        });
+    </script>
+</body>
+</html>
