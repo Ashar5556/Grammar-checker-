@@ -1,4 +1,4 @@
- [
+[
   {
     "id": 1,
     "title": "How to Use Grammarify Free Grammar Checker",
@@ -7,7 +7,9 @@
     "url": "/blog/how-to-use-grammarify-free-grammar-checker.html",
     "category": "Grammar",
     "readTime": "4 min read",
-    "image": "https://grammarify.xyz/images/grammarify.png"
+    "image": "https://grammarify.xyz/images/grammarify.png",
+    "imageWidth": 800,
+    "imageHeight": 600
   },
   {
     "id": 2,
@@ -17,6 +19,8 @@
     "url": "/blog/common-grammar-mistakes-in-2026.html",
     "category": "Grammar",
     "readTime": "8 min read",
-    "image": "https://grammarify.xyz/images/common-grammar-mistakes-in-2026.png"
+    "image": "https://grammarify.xyz/images/common-grammar-mistakes-in-2026.png",
+    "imageWidth": 800,
+    "imageHeight": 600
   }
 ]
