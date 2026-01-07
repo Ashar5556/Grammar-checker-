@@ -5,11 +5,8 @@
     "description": "Complete guide to use Grammarify tool for checking grammar mistakes",
     "date": "2025-12-20",
     "url": "/blog/how-to-use-grammarify-free-grammar-checker.html",
-    "category": "Grammar",
     "readTime": "4 min read",
-    "image": "https://grammarify.xyz/images/grammarify.png",
-    "imageWidth": 500,
-    "imageHeight": 600
+    "image": "https://grammarify.xyz/images/grammarify.png"
   },
   {
     "id": 2,
@@ -17,10 +14,16 @@
     "description": "Avoid the most common grammar mistakes in 2026 and learn how to fix them with clear examples.",
     "date": "2026-01-03",
     "url": "/blog/common-grammar-mistakes-in-2026.html",
-    "category": "Grammar",
     "readTime": "8 min read",
-    "image": "https://grammarify.xyz/images/common-grammar-mistakes-in-2026.png",
-    "imageWidth": 500,
-    "imageHeight": 600
-  }
-]
+    "image": "https://grammarify.xyz/images/common-grammar-mistakes-in-2026.png"
+ },
+{
+  "id": 3,
+  "title": "Grammarly Free vs Premium: Is Paying Worth It?",
+  "description": "Grammarly Free vs Premium explained for students with a smart free alternative.",
+  "date": "2026-01-07",
+  "url": "blog/grammarly-free-vs-premium.html",
+  "readtime": "7 min read",
+  "images": "https://grammarify.xyz/images/grammarly-free-vs-premium.png"
+}
+  
