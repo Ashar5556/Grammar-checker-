@@ -6,7 +6,7 @@
   </url>
 
   <url>
-    <loc>https://grammarify.xyz/blog</loc>
+    <loc>https://grammarify.xyz/blog.html</loc>
   </url>
 
   <!-- Blog URLs with .html -->
@@ -32,19 +32,19 @@
   </url>
 
   <url>
-    <loc>https://grammarify.xyz/faqs</loc>
+    <loc>https://grammarify.xyz/faqs.html</loc>
   </url>
 
   <url>
-    <loc>https://grammarify.xyz/about-us</loc>
+    <loc>https://grammarify.xyz/about-us.html</loc>
   </url>
 
   <url>
-    <loc>https://grammarify.xyz/privacy-policy</loc>
+    <loc>https://grammarify.xyz/privacy-policy.html</loc>
   </url>
 
   <url>
-    <loc>https://grammarify.xyz/terms-of-use</loc>
+    <loc>https://grammarify.xyz/terms-of-use.html</loc>
   </url>
 
 </urlset>
