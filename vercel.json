@@ -1,0 +1,26 @@
+{
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.grammarify.xyz"
+        }
+      ],
+      "destination": "https://grammarify.xyz/$1",
+      "statusCode": 308
+    },
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "grammar-checker-smoky.vercel.app"
+        }
+      ],
+      "destination": "https://grammarify.xyz/$1",
+      "statusCode": 308
+    }
+  ]
+}
