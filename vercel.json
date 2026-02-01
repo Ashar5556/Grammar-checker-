@@ -1,6 +1,73 @@
 {
   "redirects": [
     {
+      "source": "/robot.txt",
+      "has": [
+        {
+          "type": "host",
+          "value": "grammar-checker-smoky.vercel.app"
+        }
+      ],
+      "destination": "https://grammarify.xyz/robot.txt",
+      "statusCode": 308
+    },
+    {
+      "source": "/sitemap.xml",
+      "has": [
+        {
+          "type": "host",
+          "value": "grammar-checker-smoky.vercel.app"
+        }
+      ],
+      "destination": "https://grammarify.xyz/sitemap.xml",
+      "statusCode": 308
+    },
+    {
+      "source": "/terms-of-use.html",
+      "has": [
+        {
+          "type": "host",
+          "value": "grammar-checker-smoky.vercel.app"
+        }
+      ],
+      "destination": "https://grammarify.xyz/terms-of-use.html",
+      "statusCode": 308
+    },
+    {
+      "source": "/about.html",
+      "has": [
+        {
+          "type": "host",
+          "value": "grammar-checker-smoky.vercel.app"
+        }
+      ],
+      "destination": "https://grammarify.xyz/about.html",
+      "statusCode": 308
+    },
+    {
+      "source": "/faqs.html",
+      "has": [
+        {
+          "type": "host",
+          "value": "grammar-checker-smoky.vercel.app"
+        }
+      ],
+      "destination": "https://grammarify.xyz/faqs.html",
+      "statusCode": 308
+    },
+    {
+      "source": "/privacy-policy.html",
+      "has": [
+        {
+          "type": "host",
+          "value": "grammar-checker-smoky.vercel.app"
+        }
+      ],
+      "destination": "https://grammarify.xyz/privacy-policy.html",
+      "statusCode": 308
+    },
+
+    {
       "source": "/(.*)",
       "has": [
         {
