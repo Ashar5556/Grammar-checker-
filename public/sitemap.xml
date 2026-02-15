@@ -6,10 +6,9 @@
   </url>
 
   <url>
-    <loc>https://grammarify.xyz/blog</loc>
+    <loc>https://grammarify.xyz/blog/</loc>
   </url>
 
-  <!-- Blog URLs with .html -->
   <url>
     <loc>https://grammarify.xyz/blog/how-to-use-grammarify-free-grammar-checker.html</loc>
   </url>
@@ -18,7 +17,6 @@
     <loc>https://grammarify.xyz/blog/common-grammar-mistakes-in-2026.html</loc>
   </url>
 
-  <!-- New blog links with .html -->
   <url>
     <loc>https://grammarify.xyz/blog/how-to-improve-creative-writing-skills.html</loc>
   </url>
@@ -34,7 +32,7 @@
   <url>
     <loc>https://grammarify.xyz/blog/common-punctuation-marks-and-mistakes.html</loc>
   </url>
-                                                                                   
+
   <url>
     <loc>https://grammarify.xyz/faqs.html</loc>
   </url>
@@ -52,3 +50,4 @@
   </url>
 
 </urlset>
+
