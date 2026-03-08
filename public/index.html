@@ -1497,7 +1497,7 @@
 
             try {
                 // API call
-                const res = await fetch("/api/refine.js", {
+                const res = await fetch("https://grammarify.xyz/api/refine.js", {
                     method: "POST",
                     headers: { "Content-Type": "application/json" },
                     body: JSON.stringify({ text })
