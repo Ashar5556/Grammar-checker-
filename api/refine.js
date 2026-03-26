@@ -13,7 +13,7 @@ export default async function handler(req, res) {
     }
 
     // ✅ API Key check
-    if (!process.env.GROQ_API_KEY) {
+    if (!process.env.api) {
       return res.status(500).json({ error: "API key missing" });
     }
 
@@ -22,12 +22,12 @@ export default async function handler(req, res) {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        "Authorization": `Bearer ${process.env.GROQ_API_KEY}`
+        "Authorization": `Bearer ${process.env.api}`
       },
       body: JSON.stringify({
         model: "llama3-8b-8192", // stable model
         temperature: 0.2,
-        max_tokens: 150,
+        max_tokens: 200,
         messages: [
           {
             role: "system",
