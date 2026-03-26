@@ -62,43 +62,6 @@ ${text}`;
 
     try {
 
-      // -------- SERVER 2 : LANGUAGETOOL --------
-      const lt = await fetch("https://api.languagetool.org/v2/check", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/x-www-form-urlencoded"
-        },
-        body: new URLSearchParams({
-          text: text,
-          language: "en-US"
-        })
-      });
-
-      const data = await lt.json();
-
-      let correctedText = text;
-
-      // Apply corrections
-      data.matches.reverse().forEach(match => {
-        if (match.replacements.length > 0) {
-          const replacement = match.replacements[0].value;
-
-          correctedText =
-            correctedText.slice(0, match.offset) +
-            replacement +
-            correctedText.slice(match.offset + match.length);
-        }
-      });
-
-      return res.status(200).json({
-        server: "Fallback Server (LanguageTool)",
-        result: correctedText
-      });
-
-    } catch (err) {
-
-      return res.status(500).json({
-        error: "Both servers failed"
       });
 
     }
