@@ -74,11 +74,20 @@
   {
     "id":9,
     "title": "Comma before Coordinating Conjunction: 5-Minute Rules for perfect Grammar",
-    "discription": "Master the simple rule for using commas with coordinating conjunctions. No more confusion-just clear, professional writing in minutes. Try our free tool and fix errors Instantly!",
+    "description": "Master the simple rule for using commas with coordinating conjunctions. No more confusion-just clear, professional writing in minutes. Try our free tool and fix errors Instantly!",
     "date": "2026-03-31",
     "url": "/blog/comma-before-coordinating-conjunction.html",
     "readTime": "6min read",
     "image": "https://grammarify.xyz/images/comma-before-coordinating-conjunction.png"
+  },
+  {
+    "id":10,
+    "title": "Comma After Introductory Elements: Simple Rule in 5 Mins",
+    "description": "Confused where to put commas after introductory phrases? Learn the simple rule with clear examples. Master it in 5 minutes. Read now!",
+    "date": "2026-04-09",
+    "url": "/blog/comma-after-intoductry-elements.html",
+    "readTime": "6min read",
+    "image": "https://grammarify.xyz/images/comma-after-intoductry-elements.png"
   }
 
 ]
