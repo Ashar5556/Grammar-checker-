@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="mbbh7vu1iwOdpwAMOjs2GcVLTpgz1nNPEjBiwsCi7NM">
+    <title>Restrictive vs Nonrestrictive Clauses: The 1-Comma Rule</title>
+    <meta name="description" content="Master restrictive vs nonrestrictive clauses with the exact 3-step removal test used by elite editors.">
+    <meta name="keywords" content="restrictive vs nonrestrictive clauses, restrictive clause, nonrestrictive clause, essential clause, nonessential clause, that vs which, comma rules">
+    <meta name="author" content="Ashar - Founder of Grammarify">
+    <link rel="canonical" href="https://grammarify.xyz/blog/restrictive-vs-nonrestrictive-clauses.html">
+    <meta property="og:title" content="Restrictive vs Nonrestrictive Clauses: The 1-Comma Rule">
+    <meta property="og:description" content="Master restrictive vs nonrestrictive clauses with the exact 3-step removal test used by elite editors.">
+    <meta property="og:image" content="https://grammarify.xyz/images/grammarify-social.png">
+    <meta property="og:url" content="https://grammarify.xyz/blog/restrictive-vs-nonrestrictive-clauses.html">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="Grammarify">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Restrictive vs Nonrestrictive Clauses: The 1-Comma Rule">
+    <meta name="twitter:description" content="Master restrictive vs nonrestrictive clauses with the exact 3-step removal test used by elite editors.">
+    <meta name="twitter:image" content="https://grammarify.xyz/images/grammarify-social.png">
+    
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Restrictive vs Nonrestrictive Clauses: The 1-Comma Rule",
+        "description": "Master restrictive vs nonrestrictive clauses with the exact 3-step removal test used by elite editors.",
+        "image": "https://grammarify.xyz/images/grammarify-social.png",
+        "author": {"@type": "Person", "name": "Ashar", "url": "https://grammarify.xyz"},
+        "publisher": {"@type": "Organization", "name": "Grammarify", "logo": {"@type": "ImageObject", "url": "https://grammarify.xyz/images/favicon-32x32.png"}},
+        "datePublished": "2026-06-14",
+        "dateModified": "2026-06-14"
+    }
+    </script>
+    
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {"@type": "Question", "name": "Do you put a comma before which?", "acceptedAnswer": {"@type": "Answer", "text": "Yes for nonrestrictive clauses in US usage: use a comma before which when the clause adds extra information; do not use a comma when which introduces an essential clause."}},
+            {"@type": "Question", "name": "What is the difference between restrictive and nonrestrictive clauses?", "acceptedAnswer": {"@type": "Answer", "text": "Restrictive clauses define which noun you mean and need no commas; nonrestrictive clauses add nonessential information and require commas."}},
+            {"@type": "Question", "name": "When should I use 'that' vs 'which'?", "acceptedAnswer": {"@type": "Answer", "text": "In US style, use that for restrictive clauses and which for nonrestrictive clauses. British usage allows which in both roles."}},
+            {"@type": "Question", "name": "How do I test if a clause is restrictive?", "acceptedAnswer": {"@type": "Answer", "text": "Remove the clause. If the sentence becomes vague, it's restrictive. If it still reads clearly, it's nonrestrictive."}},
+            {"@type": "Question", "name": "Why do AI grammar tools mis-score restrictive clauses?", "acceptedAnswer": {"@type": "Answer", "text": "Most AI tools rely on pattern matching, not true context. They flag correct restrictive clauses as errors because they can't distinguish essential vs nonessential info. Grammarify uses contextual analysis to avoid false positives."}},
+            {"@type": "Question", "name": "How should ESL speakers handle restrictive clauses?", "acceptedAnswer": {"@type": "Answer", "text": "Use the Removal Test. Memorize: commas = comment (extra info), no commas = critical. Practice with minimal pairs to train your ear."}}
+        ]
+    }
+    </script>
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8K510RGL6K"></script>
+    <script>window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-8K510RGL6K');</script>
+    
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --bg-primary: #0a0a0a; --bg-secondary: #111111; --bg-card: #141414; --bg-elevated: #1a1a1a;
+            --text-primary: #ffffff; --text-secondary: #e0e0e0; --text-tertiary: #a0a0a0;
+            --accent: #3b82f6; --accent-hover: #2563eb; --border: #2a2a2a; --border-light: #333333;
+            --shadow: 0 25px 50px -12px rgba(0,0,0,0.5); --success: #10b981; --error: #ef4444;
+            --gradient: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+        }
+        @media (prefers-color-scheme: light) {
+            :root { --bg-primary: #f5f5f7; --bg-secondary: #ffffff; --bg-card: #ffffff; --bg-elevated: #fafafa;
+            --text-primary: #1d1d1f; --text-secondary: #3a3a3c; --text-tertiary: #6b6b70; --border: #e5e5e5;
+            --border-light: #d2d2d7; --shadow: 0 25px 50px -12px rgba(0,0,0,0.15); }
+        }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.7; color: var(--text-primary); background: var(--bg-primary); max-width: 1200px; margin: 0 auto; padding: 20px; overflow-x: hidden; }
+        a { color: var(--accent); text-decoration: none; border-bottom: 1px dotted transparent; transition: all 0.2s ease; }
+        a:hover { color: var(--accent-hover); border-bottom-color: var(--accent); }
+        .internal-link { color: var(--accent); font-weight: 500; border-bottom: 1px dotted var(--accent); }
+        
+        .article-header { text-align: center; padding: 60px 40px; background: var(--bg-card); border-radius: 32px; margin-bottom: 40px; box-shadow: var(--shadow); border: 1px solid var(--border); position: relative; overflow: hidden; }
+        .article-header:before { content: ''; position: absolute; top: -50%; right: -50%; width: 200%; height: 200%; background: radial-gradient(circle, rgba(59,130,246,0.1) 0%, transparent 70%); z-index: 0; }
+        .article-title { font-size: 3rem; margin-bottom: 20px; line-height: 1.2; font-weight: 700; letter-spacing: -0.02em; background: linear-gradient(135deg, var(--text-primary) 0%, var(--accent) 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; position: relative; z-index: 1; }
+        .article-meta { display: flex; justify-content: center; gap: 30px; flex-wrap: wrap; margin-top: 25px; font-size: 1rem; color: var(--text-secondary); background: var(--bg-elevated); padding: 16px 32px; border-radius: 100px; display: inline-flex; border: 1px solid var(--border-light); position: relative; z-index: 1; }
+        .author-badge { margin-top: 25px; display: flex; align-items: center; justify-content: center; gap: 15px; flex-wrap: wrap; position: relative; z-index: 1; }
+        .founder-tag { background: linear-gradient(135deg, var(--accent) 0%, var(--accent-hover) 100%); color: white; padding: 8px 24px; border-radius: 100px; font-weight: 600; font-size: 0.95rem; box-shadow: 0 4px 12px rgba(59,130,246,0.3); display: inline-block; }
+        .written-by { color: var(--text-secondary); font-size: 1.1rem; }
+        .written-by span { color: var(--accent); font-weight: 600; }
+        
+        .content-container { background: var(--bg-card); padding: 60px; border-radius: 32px; box-shadow: var(--shadow); margin-bottom: 60px; border: 1px solid var(--border); overflow-x: hidden; }
+        h2 { color: var(--text-primary); font-size: 2.2rem; margin: 60px 0 30px 0; padding-bottom: 15px; border-bottom: 2px solid var(--border); position: relative; font-weight: 600; letter-spacing: -0.01em; word-wrap: break-word; }
+        h2:after { content: ''; position: absolute; bottom: -2px; left: 0; width: 80px; height: 2px; background: var(--accent); }
+        h3 { color: var(--text-primary); font-size: 1.8rem; margin: 50px 0 25px 0; font-weight: 600; word-wrap: break-word; }
+        p { margin-bottom: 28px; font-size: 1.18rem; color: var(--text-secondary); line-height: 1.8; word-wrap: break-word; }
+        ul, ol { margin: 25px 0 25px 40px; word-wrap: break-word; }
+        li { margin-bottom: 18px; font-size: 1.15rem; line-height: 1.7; padding-left: 10px; color: var(--text-secondary); word-wrap: break-word; }
+        li:before { content: "•"; color: var(--accent); font-weight: bold; display: inline-block; width: 1em; margin-left: -1em; }
+        
+        .image-space { width: 100%; max-width: 800px; margin: 50px auto; border-radius: 24px; background: var(--bg-elevated); border: 2px solid var(--border); overflow: hidden; box-shadow: var(--shadow); transition: all 0.3s ease; }
+        .image-space img { width: 100%; height: auto; display: block; transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94); }
+        .image-space:hover { border-color: var(--accent); transform: translateY(-4px); }
+        .image-space:hover img { transform: scale(1.02); }
+        
+        .feature-box { background: var(--bg-elevated); border-left: 6px solid var(--accent); padding: 30px; margin: 35px 0; border-radius: 0 16px 16px 0; border: 1px solid var(--border-light); border-left-width: 6px; word-wrap: break-word; }
+        .feature-title { color: var(--accent); font-weight: 700; margin-bottom: 20px; font-size: 1.3rem; display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+        .feature-title:before { content: "✨"; }
+        .tip-box { background: linear-gradient(135deg, rgba(59,130,246,0.1) 0%, rgba(37,99,235,0.05) 100%); border: 1px solid var(--accent); padding: 35px; margin: 40px 0; border-radius: 20px; position: relative; overflow: hidden; word-wrap: break-word; }
+        .tip-box:before { content: '💡'; position: absolute; top: 20px; right: 30px; font-size: 4rem; opacity: 0.15; transform: rotate(10deg); }
+        .tip-box p { font-size: 1.2rem; line-height: 1.8; margin-bottom: 20px; color: var(--text-primary); font-weight: 500; position: relative; z-index: 1; max-width: 90%; word-wrap: break-word; }
+        .tip-highlight { color: var(--accent); font-weight: 700; font-size: 1.3rem; display: block; margin-bottom: 15px; }
+        .warning-box { background: linear-gradient(135deg, rgba(245,158,11,0.1) 0%, rgba(245,158,11,0.05) 100%); border-left: 6px solid #f59e0b; padding: 30px; margin: 40px 0; border-radius: 0 16px 16px 0; border: 1px solid var(--border-light); border-left-width: 6px; word-wrap: break-word; }
+        .warning-box p:first-child { color: #f59e0b; font-weight: 600; display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+        .warning-box p:first-child:before { content: "⚠️"; }
+        .quote-box { background: linear-gradient(135deg, var(--bg-elevated) 0%, var(--bg-card) 100%); border: 1px solid var(--border); padding: 35px 40px; margin: 40px 0; border-radius: 20px; font-style: italic; position: relative; text-align: center; word-wrap: break-word; }
+        .quote-box:before { content: "❝"; font-size: 5rem; color: var(--accent); opacity: 0.2; position: absolute; top: -10px; left: 20px; }
+        .quote-box:after { content: "❞"; font-size: 5rem; color: var(--accent); opacity: 0.2; position: absolute; bottom: -30px; right: 20px; }
+        .quote-box p { font-size: 1.3rem; line-height: 1.8; color: var(--text-primary); margin-bottom: 0; position: relative; z-index: 1; word-wrap: break-word; }
+        
+        .example-incorrect { color: #ef4444; margin-bottom: 8px; padding: 15px 20px; background: rgba(239,68,68,0.1); border-radius: 12px; font-size: 1.2rem; border-left: 4px solid #ef4444; text-decoration: line-through; text-decoration-color: #ef4444; text-decoration-thickness: 2px; word-wrap: break-word; }
+        .example-correct { color: #10b981; margin-bottom: 8px; padding: 15px 20px; background: rgba(16,185,129,0.1); border-radius: 12px; font-size: 1.2rem; border-left: 4px solid #10b981; word-wrap: break-word; }
+        .example-label { font-size: 0.85rem; color: var(--text-tertiary); margin-bottom: 15px; padding-left: 10px; }
+        
+        .comparison-table { width: 100%; border-collapse: collapse; margin: 40px 0; border-radius: 16px; overflow-x: auto; display: block; box-shadow: var(--shadow); }
+        .comparison-table th { background: var(--accent); color: white; padding: 15px; text-align: left; font-weight: 600; }
+        .comparison-table td { padding: 15px; border-bottom: 1px solid var(--border); color: var(--text-secondary); }
+        .comparison-table tr:last-child td { border-bottom: none; }
+        .comparison-table tr:nth-child(even) { background: var(--bg-elevated); }
+        
+        /* Scanner Box */
+        .interactive-scanner { background: linear-gradient(135deg, var(--bg-elevated) 0%, var(--bg-card) 100%); border: 2px solid var(--accent); border-radius: 24px; padding: 30px; margin: 40px 0; text-align: center; }
+        .scanner-title { font-size: 1.6rem; font-weight: 700; color: var(--accent); margin-bottom: 20px; }
+        .scanner-textarea { width: 100%; padding: 20px; border-radius: 16px; border: 1px solid var(--border); background: var(--bg-card); color: var(--text-primary); font-size: 1rem; font-family: monospace; resize: none; margin-bottom: 20px; line-height: 1.6; }
+        .scan-btn { background: var(--accent); color: white; border: none; padding: 14px 35px; border-radius: 50px; font-weight: 600; cursor: pointer; transition: 0.3s; font-size: 1.1rem; }
+        .scan-btn:hover { background: var(--accent-hover); transform: translateY(-2px); }
+        .scanner-result { background: var(--bg-card); padding: 20px; border-radius: 16px; margin-top: 20px; display: none; text-align: left; border: 1px solid var(--border); }
+        .scanner-result.show { display: block; }
+        .correct-text { color: var(--success); font-family: monospace; font-size: 1rem; line-height: 1.8; word-wrap: break-word; }
+        .green-flash { animation: greenFlash 2s ease; }
+        @keyframes greenFlash { 0% { background-color: transparent; } 30% { background-color: rgba(16,185,129,0.3); } 100% { background-color: transparent; } }
+        .transition-message { margin: 20px 0 0 0; padding: 15px; background: var(--bg-elevated); border-radius: 12px; text-align: center; }
+        .want-link { color: var(--accent); font-weight: 500; cursor: pointer; text-decoration: none; }
+        .grammarify-btn { display: inline-block; background: var(--accent); color: white; padding: 12px 30px; border-radius: 50px; font-weight: 600; margin-top: 10px; text-decoration: none; border: none; }
+        .grammarify-btn:hover { background: var(--accent-hover); color: white; transform: translateY(-2px); }
+        
+        .example-sentence { background: var(--bg-elevated); padding: 15px 20px; border-radius: 16px; margin: 20px 0; border: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 15px; }
+        .copy-btn { background: var(--accent); color: white; border: none; padding: 8px 20px; border-radius: 50px; cursor: pointer; font-size: 0.9rem; }
+        .copy-btn:hover { background: var(--accent-hover); }
+        
+        .social-card { background: linear-gradient(135deg, var(--bg-elevated) 0%, var(--bg-card) 100%); border-radius: 24px; padding: 35px; margin: 50px 0; text-align: center; border: 1px solid var(--accent); }
+        .share-btn { display: inline-flex; align-items: center; gap: 10px; background: #1DA1F2; color: white; padding: 12px 30px; border-radius: 50px; font-weight: 600; text-decoration: none; }
+        .share-btn:hover { transform: translateY(-2px); color: white; border-bottom: none; }
+        
+        .grammarify-tool { background: linear-gradient(135deg, var(--bg-elevated) 0%, var(--bg-card) 100%); border: 2px solid var(--accent); padding: 35px; margin: 50px 0; border-radius: 24px; display: flex; align-items: center; gap: 35px; flex-wrap: wrap; }
+        .tool-icon { font-size: 4rem; color: var(--accent); background: var(--bg-card); width: 80px; height: 80px; display: flex; align-items: center; justify-content: center; border-radius: 50%; border: 2px solid var(--accent); }
+        .tool-content { flex: 1; }
+        .tool-content h3 { color: var(--accent); margin-bottom: 15px; font-size: 1.6rem; margin-top: 0; }
+        .tool-link { display: inline-block; background: var(--gradient); color: white; padding: 12px 30px; border-radius: 50px; font-weight: 600; text-decoration: none; }
+        .tool-link:hover { transform: translateY(-2px); color: white; border-bottom: none; }
+        
+        /* Quiz */
+        .quiz-container { background: var(--bg-elevated); border-radius: 28px; padding: 35px; margin: 50px 0; border: 1px solid var(--border); }
+        .quiz-question { margin-bottom: 25px; }
+        .quiz-question h4 { font-size: 1.3rem; margin-bottom: 20px; color: var(--text-primary); }
+        .quiz-option { display: block; margin: 10px 0; padding: 12px 15px; border-radius: 12px; cursor: pointer; background: var(--bg-card); border: 1px solid var(--border-light); transition: all 0.2s; }
+        .quiz-option:hover { background: var(--bg-elevated); border-color: var(--accent); }
+        .quiz-option input { margin-right: 12px; }
+        .quiz-nav { display: flex; justify-content: space-between; align-items: center; margin-top: 30px; flex-wrap: wrap; gap: 15px; }
+        .quiz-nav-btn { background: var(--accent); color: white; border: none; padding: 10px 25px; border-radius: 50px; cursor: pointer; font-weight: 600; }
+        .quiz-nav-btn:disabled { opacity: 0.5; cursor: not-allowed; }
+        .quiz-progress { color: var(--text-secondary); font-size: 0.9rem; }
+        
+        .faq-section { background: var(--bg-elevated); padding: 50px; border-radius: 24px; margin: 60px 0; border: 1px solid var(--border); }
+        .faq-item { margin-bottom: 35px; padding-bottom: 35px; border-bottom: 2px dashed var(--border); }
+        .faq-item:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+        .faq-question { color: var(--text-primary); font-size: 1.4rem; margin-bottom: 20px; font-weight: 700; display: flex; align-items: center; gap: 15px; flex-wrap: wrap; }
+        .faq-question:before { content: "❓"; font-size: 1.2rem; color: var(--accent); }
+        .faq-item p { color: var(--text-secondary); margin-bottom: 0; font-size: 1.15rem; word-wrap: break-word; }
+        
+        .founder-section { background: linear-gradient(135deg, var(--bg-elevated) 0%, var(--bg-card) 100%); padding: 50px; border-radius: 32px; margin: 60px 0; border: 1px solid var(--border); text-align: center; }
+        .founder-badge { background: var(--accent); color: white; display: inline-block; padding: 8px 28px; border-radius: 100px; font-weight: 600; font-size: 0.95rem; margin-bottom: 25px; }
+        .founder-name { font-size: 3rem; color: var(--text-primary); margin-bottom: 10px; font-weight: 800; }
+        .founder-name span { color: var(--accent); }
+        .founder-title { font-size: 1.3rem; color: var(--text-secondary); margin-bottom: 25px; font-weight: 500; word-wrap: break-word; }
+        .founder-quote { font-size: 1.3rem; font-style: italic; color: var(--text-primary); margin: 30px 0; padding: 20px 30px; background: var(--bg-card); border-radius: 20px; border: 1px solid var(--border); word-wrap: break-word; }
+        .support-box { background: var(--bg-card); border-radius: 24px; padding: 35px; margin-top: 35px; border: 1px solid var(--border); }
+        .support-box h4 { color: var(--accent); margin-bottom: 20px; font-size: 1.4rem; word-wrap: break-word; }
+        .support-email { display: flex; align-items: center; justify-content: center; gap: 15px; background: var(--bg-elevated); padding: 20px 25px; border-radius: 16px; margin: 25px 0; border: 1px solid var(--border); flex-wrap: wrap; word-break: break-all; }
+        .support-email a { color: var(--accent); font-size: 1.2rem; font-weight: 600; }
+        .extraordinary-text { font-size: 1.3rem; margin-top: 25px; font-weight: 600; background: linear-gradient(135deg, var(--accent) 0%, var(--text-primary) 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; word-wrap: break-word; }
+        
+        .related-posts { background: var(--bg-elevated); padding: 50px; border-radius: 24px; margin: 60px 0; border: 1px solid var(--border); }
+        .related-title { color: var(--text-primary); font-size: 2rem; margin-bottom: 40px; text-align: center; position: relative; padding-bottom: 20px; }
+        .related-title:after { content: ''; position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); width: 100px; height: 4px; background: var(--gradient); border-radius: 2px; }
+        .related-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+        .related-card { background: var(--bg-card); padding: 35px; border-radius: 20px; border-top: 4px solid var(--accent); transition: all 0.3s; border: 1px solid var(--border); }
+        .related-card:hover { transform: translateY(-8px); }
+        .related-card-title { font-size: 1.3rem; margin-bottom: 20px; display: block; font-weight: 600; word-wrap: break-word; }
+        .related-card-desc { color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6; margin-bottom: 20px; word-wrap: break-word; }
+        .read-more-btn { display: inline-block; background: transparent; color: var(--accent); padding: 10px 25px; border-radius: 50px; border: 1px solid var(--accent); font-weight: 600; transition: all 0.3s; }
+        .read-more-btn:hover { background: var(--accent); color: white; border-bottom: none; }
+        
+        /* Newsletter Section */
+        .blog-newsletter { background: linear-gradient(135deg, var(--bg-elevated) 0%, var(--bg-card) 100%); border-radius: 32px; padding: 60px 40px; margin: 60px 0; border: 1px solid var(--border); text-align: center; position: relative; overflow: hidden; }
+        .blog-newsletter:before { content: ''; position: absolute; top: -50%; right: -50%; width: 200%; height: 200%; background: radial-gradient(circle, rgba(59,130,246,0.08) 0%, transparent 70%); z-index: 0; }
+        .blog-newsletter-content { position: relative; z-index: 1; max-width: 550px; margin: 0 auto; }
+        .blog-newsletter-icon { width: 70px; height: 70px; background: var(--gradient); border-radius: 24px; display: flex; align-items: center; justify-content: center; margin: 0 auto 25px; color: white; font-size: 30px; box-shadow: 0 8px 20px rgba(59,130,246,0.3); }
+        .blog-newsletter h3 { font-size: 1.8rem; margin-bottom: 15px; color: var(--text-primary); }
+        .blog-newsletter p { color: var(--text-secondary); margin-bottom: 30px; font-size: 1rem; }
+        .blog-newsletter-form { display: flex; flex-direction: column; gap: 15px; max-width: 450px; margin: 0 auto; }
+        @media (min-width: 640px) { .blog-newsletter-form { flex-direction: row; } }
+        .blog-newsletter-input { flex: 1; padding: 16px 24px; border-radius: 100px; border: 1px solid var(--border); background: var(--bg-card); color: var(--text-primary); font-size: 1rem; width: 100%; }
+        .blog-newsletter-input:focus { outline: none; border-color: var(--accent); }
+        .blog-newsletter-button { padding: 16px 32px; border-radius: 100px; border: none; background: var(--gradient); color: white; font-weight: 600; font-size: 1rem; cursor: pointer; transition: all 0.2s; display: inline-flex; align-items: center; gap: 8px; white-space: nowrap; }
+        @media (min-width: 640px) { .blog-newsletter-button { width: auto; } }
+        .blog-newsletter-button:hover { transform: translateY(-2px); box-shadow: 0 8px 20px rgba(59,130,246,0.3); }
+        .blog-newsletter-trust { display: flex; align-items: center; justify-content: center; gap: 8px; color: var(--text-tertiary); font-size: 0.85rem; margin-top: 25px; flex-wrap: wrap; }
+        .blog-newsletter-success { display: none; text-align: center; padding: 20px; }
+        .blog-newsletter-success.active { display: block; }
+        .success-checkmark { width: 60px; height: 60px; background: var(--success); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 15px; color: white; font-size: 28px; animation: scaleIn 0.3s ease; }
+        .success-text { font-size: 1.2rem; font-weight: 600; color: var(--text-primary); margin-bottom: 5px; }
+        .success-subtext { font-size: 0.9rem; color: var(--text-secondary); }
+        
+        /* Footer */
+        .article-footer { text-align: center; padding: 60px 40px; background: var(--bg-secondary); color: var(--text-primary); border-radius: 32px; margin-top: 60px; box-shadow: var(--shadow); border: 1px solid var(--border); }
+        .footer-logo { font-size: 2.5rem; font-weight: 800; margin-bottom: 20px; background: linear-gradient(135deg, var(--accent) 0%, var(--text-primary) 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+        .footer-tagline { font-size: 1.1rem; color: var(--text-secondary); margin-bottom: 30px; max-width: 600px; margin-left: auto; margin-right: auto; word-wrap: break-word; }
+        .footer-links { display: flex; justify-content: center; gap: 40px; margin: 40px 0; flex-wrap: wrap; }
+        .footer-links a { color: var(--text-secondary); text-decoration: none; font-size: 1rem; transition: color 0.3s; padding: 8px 16px; border-radius: 8px; }
+        .footer-links a:hover { color: var(--accent); background: var(--bg-elevated); border-bottom: none; }
+        .copyright { margin-top: 40px; padding-top: 30px; border-top: 1px solid var(--border); color: var(--text-tertiary); font-size: 0.9rem; word-wrap: break-word; }
+        .copyright a { color: var(--accent); }
+        
+        @keyframes scaleIn { 0% { transform: scale(0); } 70% { transform: scale(1.1); } 100% { transform: scale(1); } }
+        
+        /* Popup Styles */
+        .popup-overlay { position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.85); backdrop-filter: blur(8px); display: flex; align-items: center; justify-content: center; z-index: 9999; opacity: 0; visibility: hidden; transition: 0.3s; }
+        .popup-overlay.active { opacity: 1; visibility: visible; }
+        .popup-container { background: var(--bg-card); border-radius: 32px; padding: 40px; max-width: 420px; width: 90%; text-align: center; border: 1px solid var(--border); position: relative; }
+        .popup-close { position: absolute; top: 15px; right: 20px; background: none; border: none; color: var(--text-secondary); font-size: 24px; cursor: pointer; }
+        .popup-icon { width: 48px; height: 48px; background: var(--accent); border-radius: 16px; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; color: white; font-size: 24px; }
+        .popup-title { font-size: 1.5rem; font-weight: 700; margin-bottom: 10px; color: var(--text-primary); }
+        .popup-subtitle { font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 25px; }
+        .popup-input { width: 100%; padding: 14px 20px; border-radius: 100px; border: 1px solid var(--border); background: var(--bg-elevated); color: var(--text-primary); font-size: 1rem; margin-bottom: 15px; }
+        .popup-submit-btn { background: var(--gradient); color: white; border: none; padding: 12px 25px; border-radius: 100px; font-weight: 600; cursor: pointer; width: 100%; }
+        .popup-trust { display: flex; align-items: center; justify-content: center; gap: 8px; color: var(--text-tertiary); font-size: 0.8rem; margin-top: 15px; }
+        
+        @media (max-width: 768px) {
+            .article-title { font-size: 2rem; }
+            .content-container { padding: 30px 20px; }
+            h2 { font-size: 1.6rem; }
+            h3 { font-size: 1.3rem; }
+            .article-meta { flex-direction: column; gap: 10px; padding: 15px 20px; }
+            .comparison-table { font-size: 0.8rem; }
+            .grammarify-tool { flex-direction: column; text-align: center; }
+            .founder-name { font-size: 2rem; }
+            .founder-title { font-size: 1rem; }
+            .support-email a { font-size: 0.9rem; }
+            .related-grid { grid-template-columns: 1fr; }
+            .footer-links { gap: 15px; }
+            .blog-newsletter { padding: 40px 20px; }
+            .blog-newsletter h3 { font-size: 1.4rem; }
+            .quiz-nav { flex-direction: column; }
+            .quiz-nav-btn { width: 100%; }
+            .scanner-textarea { font-size: 0.85rem; padding: 15px; }
+        }
+        @media (max-width: 480px) {
+            .article-title { font-size: 1.6rem; }
+            .article-header { padding: 30px 15px; }
+            .content-container { padding: 20px 15px; }
+            p { font-size: 1rem; }
+            .example-incorrect, .example-correct { font-size: 0.9rem; padding: 10px 12px; }
+            .feature-box { padding: 20px; }
+            .tip-box { padding: 20px; }
+            .quote-box { padding: 20px; }
+            .faq-section { padding: 25px; }
+            .faq-question { font-size: 1.1rem; }
+            .related-posts, .founder-section { padding: 25px; }
+            .article-footer { padding: 30px 20px; }
+            .footer-logo { font-size: 1.8rem; }
+            .footer-tagline { font-size: 0.9rem; }
+            .blog-newsletter-form { flex-direction: column; }
+            .blog-newsletter-button { width: 100%; justify-content: center; }
+        }
+    </style>
+</head>
+<body>
+    <header class="article-header">
+        <h1 class="article-title">Restrictive vs Nonrestrictive Clauses: The 1-Comma Rule</h1>
+        <div style="max-width:800px; margin:20px auto;">
+            <div class="article-meta">
+                <span>📅 June 14, 2026</span>
+                <span>⏱️ 12 min read</span>
+                <span>📝 2500+ words</span>
+                <span>✍️ Advanced Grammar</span>
+            </div>
+            <div class="author-badge">
+                <span class="founder-tag">✨ FOUNDER OF GRAMMARIFY ✨</span>
+                <span class="written-by">Written by <span>Ashar</span></span>
+            </div>
+        </div>
+    </header>
+    
+    <main class="content-container">
+        
+        <h2>Restrictive and Nonrestrictive Clauses: The Comma Rule That Changes Everything</h2>
+        
+        <p>I once sent a whitepaper to a client with this sentence:</p>
+        
+        <div class="example-incorrect">My editor, who reviewed the contract, flagged the ambiguity.</div>
+        
+        <p>He replied: "Wait — you have more than one editor?"</p>
+        
+        <p>I didn't. But those two commas told him I did. That one mistake taught me more about <strong>restrictive and nonrestrictive clauses</strong> than any grammar book ever could.</p>
+        
+        <p>If you've ever frozen mid-sentence wondering, <em>"Does this need a comma before 'which' or not?"</em> — this ultimate guide ends that confusion for good.</p>
+        
+        <!-- IMAGE SPACE 1 -->
+        <div class="image-space">
+            <img src="https://grammarify.xyz/images/restrictive-nonrestrictive-clauses1.png" alt="Restrictive vs nonrestrictive clauses guide">
+        </div>
+        
+        <div class="feature-box">
+            <div class="feature-title">📌 Quick Definition (One-sentence snippet)</div>
+            <p><strong>Restrictive clauses</strong> identify exactly which noun you mean (no commas). <strong>Nonrestrictive clauses</strong> add extra information about an already-identified noun and are set off with commas.</p>
+        </div>
+        
+        <!-- Scanner Box -->
+        <div class="interactive-scanner">
+            <div class="scanner-title">🔍 Test Your Understanding</div>
+            <textarea id="scanner-input" class="scanner-textarea" rows="4">1. The students who passed the exam received certificates.
+2. My brother who lives in New York is visiting.
+3. The report which was submitted late lost points.</textarea>
+            <button id="scan-btn" class="scan-btn">🔵 Scan & Fix</button>
+            <div id="scanner-result" class="scanner-result"></div>
+        </div>
+        
+        <h2>What Are Restrictive and Nonrestrictive Clauses? (Simple Definition)</h2>
+        
+        <p>Let's break down the technical jargon into plain English.</p>
+        
+        <ul>
+            <li><strong>A restrictive clause</strong> limits or identifies exactly <em>which</em> noun you mean. It is an <strong>essential clause</strong> (or defining clause). Remove it, and the sentence either falls apart or says something completely different.</li>
+            <li><strong>A nonrestrictive clause</strong> adds extra, bonus detail about a noun that is already clearly identified. It is a <strong>nonessential clause</strong> (or non-defining clause). Remove it, and the core sentence survives perfectly intact.</li>
+        </ul>
+        
+        <p>For more on <a href="https://grammarify.xyz/blog/comma-rules-in-english.html" class="internal-link">comma rules in English</a>, check out our complete guide. And if you're curious about the <a href="https://grammarify.xyz/blog/oxford-comma-explained.html" class="internal-link">Oxford comma</a>, we've got that covered too.</p>
+        
+        <h2>The Removal Test: How to Identify a Nonrestrictive Clause Every Time</h2>
+        
+        <p>Most grammar guides dump confusing definitions and leave you stranded. Here is the exact, bulletproof test professional editors use every single time:</p>
+        
+        <div class="tip-box">
+            <span class="tip-highlight">🔬 The Test:</span>
+            <p>Read your sentence. Mentally pull out the clause (the part starting with <em>who, which, or that</em>).</p>
+            <p>• Does the core meaning change or become vague? <strong>Yes</strong> → It is a restrictive clause. <strong>No commas</strong>.</p>
+            <p>• Does the sentence still make perfect sense? <strong>No</strong> → It is a nonrestrictive clause. <strong>Add commas</strong>.</p>
+        </div>
+        
+        <h3>Restrictive Modifier Example (No Commas):</h3>
+        <div class="example-correct">The employee who submitted the report got promoted.</div>
+        <p><strong>Apply the Removal Test:</strong> <em>"The employee got promoted."</em> Which employee? The sentence loses its specific identity. The clause is critical.</p>
+        
+        <h3>Nonrestrictive Modifier Example (With Commas):</h3>
+        <div class="example-correct">Sarah, who submitted the report, got promoted.</div>
+        <p><strong>Apply the Removal Test:</strong> <em>"Sarah got promoted."</em> The sentence is still perfectly clear because Sarah is already identified by her name. The clause is just a casual comment.</p>
+        
+        <div class="example-sentence">
+            <span>📋 "My brother, who lives in Karachi, is visiting."</span>
+            <button class="copy-btn" data-copy="My brother, who lives in Karachi, is visiting.">Copy</button>
+        </div>
+        
+        <div class="example-sentence">
+            <span>📋 "Students who fail the exam must retake the course."</span>
+            <button class="copy-btn" data-copy="Students who fail the exam must retake the course.">Copy</button>
+        </div>
+        
+        <h2>Restrictive vs Nonrestrictive Relative Clause Comparison Table</h2>
+        
+        <table class="comparison-table">
+            <thead><tr><th>Feature</th><th>Restrictive Clause</th><th>Nonrestrictive Clause</th></tr></thead>
+            <tbody>
+                <tr><td>Alternative Names</td><td>Essential clause, Defining clause</td><td>Nonessential clause, Non-defining clause</td></tr>
+                <tr><td>Punctuation Rules</td><td><strong>Strictly No Commas</strong></td><td><strong>Required parenthetical commas</strong></td></tr>
+                <tr><td>Is it Removable?</td><td>No—the meaning changes completely</td><td>Yes—the core meaning holds intact</td></tr>
+                <tr><td>US English Pronoun</td><td><em>that</em> or <em>who</em></td><td><em>which</em> or <em>who</em></td></tr>
+                <tr><td>UK English Pronoun</td><td><em>that</em>, <em>which</em>, or <em>who</em></td><td><em>which</em> or <em>who</em></td></tr>
+                <tr><td>Classic Example</td><td>The file that you deleted is gone.</td><td>The file, which you deleted, is gone.</td></tr>
+            </tbody>
+        </table>
+        
+        <!-- IMAGE SPACE 2 -->
+        <div class="image-space">
+            <img src="https://grammarify.xyz/images/restrictive-nonrestrictive-clauses2.png" alt="That vs which grammar rule explained">
+        </div>
+        
+        <h2>Side-by-Side Examples That Actually Show the Difference</h2>
+        
+        <h3>1. The Brother Test</h3>
+        <p><strong>No Commas:</strong> <em>My brother who lives in Karachi is visiting.</em> (Implies I have multiple brothers, and I am specifying the one in Karachi).</p>
+        <p><strong>With Commas:</strong> <em>My brother, who lives in Karachi, is visiting.</em> (I have exactly one brother. The fact that he lives in Karachi is just bonus information).</p>
+        
+        <h3>2. The Students Rule</h3>
+        <p><strong>No Commas:</strong> <em>Students who fail the exam must retake the course.</em> (Only the specific students who failed must retake it).</p>
+        <p><strong>With Commas:</strong> <em>Students, who fail the exam, must retake the course.</em> (This bizarrely implies that <em>all</em> students fail the exam, and therefore all must retake it).</p>
+        
+        <h3>3. The File Deletion Nightmare</h3>
+        <p><strong>No Commas:</strong> <em>Please delete the files that are marked temporary.</em> (Delete only the temporary ones).</p>
+        <p><strong>With Commas:</strong> <em>Please delete the files, which are marked temporary.</em> (Delete every single file in the folder—they just happen to be temporary).</p>
+        
+        <div class="grammarify-tool">
+            <div class="tool-icon">🔧</div>
+            <div class="tool-content">
+                <h3>Catch Comma Mistakes Before They Cost You</h3>
+                <p>Not sure if you need that comma? Grammarify catches restrictive/nonrestrictive errors instantly.</p>
+                <a href="https://grammarify.xyz" class="tool-link" target="_blank">Try Grammarify Free →</a>
+            </div>
+        </div>
+        
+        <h2>That vs. Which: The Grammar Rule Nobody Explains Clearly</h2>
+        
+        <p>If you write for global clients, you need to understand regional conventions.</p>
+        
+        <h3>American English (Chicago Manual & AP Style):</h3>
+        <p>Use <strong>that</strong> for restrictive clauses and <strong>which</strong> for nonrestrictive clauses (always preceded by a comma).</p>
+        <div class="example-correct">The policy <strong>that</strong> applies to new hires is on page five.</div>
+        <div class="example-correct">This policy, <strong>which</strong> was updated last year, applies to all staff.</div>
+        
+        <h3>British English (Cambridge & Commonwealth):</h3>
+        <p><strong>Which</strong> is perfectly acceptable for both restrictive and nonrestrictive adjective clauses. Punctuation and context do all the heavy lifting.</p>
+        
+        <div class="warning-box">
+            <p><strong>⚠️ One Rule That Never Flips:</strong> "That" is always restrictive. Unlike <em>which</em> (which can go either way depending on commas), <em>that</em> never introduces a nonrestrictive clause.</p>
+        </div>
+        
+        <div class="social-card">
+            <h4>📢 Share This Grammar Tip</h4>
+            <p>"A missing comma once cost a company $5 million. Master restrictive vs nonrestrictive clauses today!"</p>
+            <a href="https://twitter.com/intent/tweet?text=A%20missing%20comma%20once%20cost%20a%20company%20%245%20million.%20Master%20restrictive%20vs%20nonrestrictive%20clauses%20today!%20https://grammarify.xyz/blog/restrictive-vs-nonrestrictive-clauses.html" target="_blank" class="share-btn">🐦 Share on X (Twitter)</a>
+        </div>
+        
+        <h2>The 5 Mistakes Writers Make Most Often</h2>
+        
+        <ol>
+            <li><strong>Placing commas around a restrictive clause</strong><br>❌ <em>The students, who passed, received certificates.</em><br>✅ <em>The students who passed received certificates.</em></li>
+            <li><strong>Forgetting the closing parenthetical comma</strong><br>❌ <em>My colleague, who joined last year works remotely.</em><br>✅ <em>My colleague, who joined last year, works remotely.</em></li>
+            <li><strong>Using <em>which</em> without a comma for a restrictive clause in US English</strong><br>❌ <em>The rule which applies here is simple.</em><br>✅ <em>The rule that applies here is simple.</em></li>
+            <li><strong>Using <em>that</em> to refer to people in formal contexts</strong><br>❌ <em>The analyst that wrote the report resigned.</em><br>✅ <em>The analyst who wrote the report resigned.</em></li>
+            <li><strong>Treating an appositive clause as optional trivia</strong><br>❌ <em>The passport, that expires next month, must be renewed.</em><br>✅ <em>The passport that expires next month must be renewed.</em></li>
+        </ol>
+        
+        <div class="tip-box">
+            <span class="tip-highlight">💡 The Cheat Phrase Worth Memorizing</span>
+            <p><strong>Commas = Comment. No Commas = Critical.</strong></p>
+            <p>If the clause is just a casual <em>comment</em> on something already identified → use commas. If the clause is <em>critical to knowing which noun you are talking about</em> → no commas.</p>
+        </div>
+        
+        <!-- Quiz -->
+        <div class="quiz-container">
+            <h3 style="margin-top: 0;">📝 Test Your Knowledge</h3>
+            <p>10 questions. One at a time. Submit email to see your score.</p>
+            <div id="quiz-question-container"></div>
+            <div class="quiz-nav">
+                <button id="prev-btn" class="quiz-nav-btn" disabled>← Previous</button>
+                <span id="quiz-progress" class="quiz-progress">Question 1 of 10</span>
+                <button id="next-btn" class="quiz-nav-btn">Next →</button>
+            </div>
+            <button id="submit-quiz-final" class="scan-btn" style="margin-top: 25px; width: 100%; background: var(--accent);">📝 Submit Quiz & See Results</button>
+        </div>
+        
+        <h2>FAQ</h2>
+        
+        <div class="faq-section">
+            <div class="faq-item">
+                <div class="faq-question">Do you put a comma before which?</div>
+                <p>Yes for nonrestrictive clauses in US usage: use a comma before <em>which</em> when the clause adds extra information; do not use a comma when <em>which</em> introduces an essential (restrictive) clause—though US style typically prefers <em>that</em> for restrictive uses.</p>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">What is the difference between restrictive and nonrestrictive clauses?</div>
+                <p>Restrictive clauses define which noun you mean and need no commas; nonrestrictive clauses add nonessential information and require commas.</p>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">When should I use "that" vs "which"?</div>
+                <p>In US style, use <em>that</em> for restrictive clauses (no commas) and <em>which</em> for nonrestrictive clauses (with commas). British usage allows <em>which</em> in both roles more freely.</p>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">How do I test if a clause is restrictive?</div>
+                <p>Remove the clause. If the sentence becomes vague or changes meaning, it's restrictive. If it still reads clearly, it's nonrestrictive.</p>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">Why do AI grammar tools like Grammarly and QuillBot mis-score restrictive clauses?</div>
+                <p>Most AI grammar tools rely on pattern matching, not true context understanding. They often flag correct restrictive clauses as "missing commas" because they can't distinguish between essential and nonessential information. <strong>Grammarify uses a smarter contextual engine that applies the Removal Test logic</strong>, giving you accurate guidance without false positives—saving you from "correcting" perfectly fine sentences.</p>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">How should ESL/EFL speakers handle restrictive clauses if their native languages don't use commas for meaning shifts?</div>
+                <p>The Removal Test is your best friend. Memorize: <strong>"Commas = Comment (extra info). No commas = Critical (essential to identify)."</strong> Practice with minimal pairs: "My brother who lives in Karachi" (implies multiple brothers) vs "My brother, who lives in Karachi" (only one brother). Unlike many languages, English uses comma placement to shift meaning—train yourself to hear the difference, and Grammarify can help flag ambiguous cases.</p>
+            </div>
+        </div>
+        
+        <div class="quote-box">
+            <p>Restrictive and nonrestrictive clauses aren't arbitrary grammar rules. They dictate how readers automatically process meaning. Every time you place commas around a clause, you tell your reader: "You already know exactly what I mean. This is just extra." Every time you skip the commas, you say: "Pay attention, you need this clause to understand the subject." Once you look at punctuation as a tool for precision rather than a set of rules to memorize, your writing immediately gains a level of authority that clients and readers instinctively trust.</p>
+        </div>
+        
+        <div class="founder-section">
+            <div class="founder-badge">✨ FOUNDER OF GRAMMARIFY ✨</div>
+            <div class="founder-name">Ashar</div>
+            <div class="founder-title">Founder of Grammarify. Helping writers, students, and professionals communicate clearly through better grammar.</div>
+            <div class="founder-quote">I started Grammarify because I believe everyone deserves to write with clarity and confidence. Punctuation shouldn't be a mystery — it should be your superpower.</div>
+            <div class="support-box">
+                <h4>Need Custom Content or Editing Help?</h4>
+                <p>Whether you need a blog post written, your work edited, or just some grammar guidance — I'm here to help.</p>
+                <div class="support-email"><span>📩</span><a href="mailto:knawz500@gmail.com">knawz500@gmail.com</a></div>
+                <p>💡 <strong>Support & Inquiries:</strong> Questions, guidance, or personalized content – I've got you covered! (I reply within 24 hours)</p>
+                <div class="extraordinary-text">✨ Let's create something extraordinary together!</div>
+            </div>
+        </div>
+        
+        <!-- Blog Newsletter -->
+        <section class="blog-newsletter">
+            <div class="blog-newsletter-content">
+                <div class="blog-newsletter-icon">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M22 6L12 13L2 6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <h3>Never Miss a Grammar Tip</h3>
+                <p>Get punctuation guides, comma rules, and writing insights delivered to your inbox. No spam, just clarity — from Ashar, founder of Grammarify.</p>
+                
+                <div id="blog-newsletter-form" class="blog-newsletter-form">
+                    <input type="email" id="blog-email-input" class="blog-newsletter-input" placeholder="Your email address" required>
+                    <button type="button" id="blog-subscribe-btn" class="blog-newsletter-button">
+                        Subscribe Free
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </div>
+                
+                <div id="blog-newsletter-success" class="blog-newsletter-success">
+                    <div class="success-checkmark">✓</div>
+                    <div class="success-text">You're subscribed!</div>
+                    <div class="success-subtext">Thank you for joining — check your inbox soon.</div>
+                </div>
+                
+                <div class="blog-newsletter-trust">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 22C12 22 20 18 20 12V5L12 2L4 5V12C4 18 12 22 12 22Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <span>No spam. Privacy respected. Written by Ashar.</span>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Related Posts -->
+        <div class="related-posts">
+            <h2 class="related-title">More Writing Guides</h2>
+            <div class="related-grid">
+                <div class="related-card">
+                    <a href="https://grammarify.xyz/blog/comma-rules-in-english.html" class="related-card-title">8 Comma Rules in English (With Examples & Common Mistakes)</a>
+                    <p class="related-card-desc">Learn the 8 essential comma rules in English with clear examples, common mistakes, and practical tips to write confidently.</p>
+                    <a href="https://grammarify.xyz/blog/comma-rules-in-english.html" class="read-more-btn">Read Guide →</a>
+                </div>
+                <div class="related-card">
+                    <a href="https://grammarify.xyz/blog/comma-before-coordinating-conjunction.html" class="related-card-title">Comma Before Coordinating Conjunction: 5-Minute Rule for Perfect Grammar</a>
+                    <p class="related-card-desc">Master the simple rule for using commas with coordinating conjunctions. No more confusion—just clear, professional writing in minutes.</p>
+                    <a href="https://grammarify.xyz/blog/comma-before-coordinating-conjunction.html" class="read-more-btn">Read Guide →</a>
+                </div>
+                <div class="related-card">
+                    <a href="https://grammarify.xyz/blog/comma-after-introductory-phrase.html" class="related-card-title">Comma After Introductory Phrase: Simple Rule</a>
+                    <p class="related-card-desc">Master the simple rule for commas after introductory phrases. Learn when to add, when to skip, and write with confidence.</p>
+                    <a href="https://grammarify.xyz/blog/comma-after-introductory-phrase.html" class="read-more-btn">Read Guide →</a>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <!-- Popups -->
+    <div id="quiz-email-overlay" class="popup-overlay">
+        <div class="popup-container">
+            <button class="popup-close" onclick="document.getElementById('quiz-email-overlay').classList.remove('active')">✕</button>
+            <div class="popup-icon">📧</div>
+            <h3 class="popup-title">See Your Quiz Results</h3>
+            <p class="popup-subtitle">Enter your email to view your score and detailed explanations for each question.</p>
+            <input type="email" id="quiz-email" class="popup-input" placeholder="Your email address">
+            <button id="quiz-email-submit" class="popup-submit-btn">View Results →</button>
+            <div class="popup-trust">🔒 No spam. Unsubscribe anytime.</div>
+        </div>
+    </div>
+    
+    <div id="quiz-results-overlay" class="popup-overlay">
+        <div class="popup-container" style="max-width: 600px; max-height: 80vh; overflow-y: auto;">
+            <button class="popup-close" onclick="document.getElementById('quiz-results-overlay').classList.remove('active')">✕</button>
+            <div id="results-score" style="font-size: 1.5rem; font-weight: bold; margin-bottom: 20px;"></div>
+            <div id="results-details"></div>
+        </div>
+    </div>
+    
+    <div id="newsletter-popup" class="popup-overlay">
+        <div class="popup-container">
+            <button class="popup-close" onclick="document.getElementById('newsletter-popup').classList.remove('active')">✕</button>
+            <div class="popup-icon">✍️</div>
+            <h3 class="popup-title">Write with clarity</h3>
+            <p class="popup-subtitle">Get grammar guides, punctuation tips, and writing advice from Ashar directly to your inbox.</p>
+            <input type="email" id="popup-email-input" class="popup-input" placeholder="Your email address">
+            <button id="popup-subscribe-btn" class="popup-submit-btn">Subscribe →</button>
+            <div class="popup-trust">No spam. Unsubscribe anytime.</div>
+        </div>
+    </div>
+    
+    <footer class="article-footer">
+        <div class="footer-content">
+            <div class="footer-logo">Grammarify</div>
+            <div class="footer-tagline">
+                Founded by Ashar — helping writers achieve clarity through better grammar and punctuation. Your free writing companion for clearer, more professional writing.
+            </div>
+            <div class="footer-links">
+                <a href="https://grammarify.xyz">Homepage</a>
+                <a href="https://grammarify.xyz/blog">Writing Blog</a>
+                <a href="https://grammarify.xyz/blog/how-to-use-grammarify-free-grammar-checker.html">How to Use Grammarify</a>
+                <a href="https://grammarify.xyz/blog/grammarly-free-vs-premium.html">Grammarly Comparison</a>
+            </div>
+            <div class="copyright">
+                <p>© 2026 Grammarify.xyz - Founded by Ashar. All rights reserved.</p>
+                <p style="margin-top: 10px;">Contact: <a href="mailto:knawz500@gmail.com">knawz500@gmail.com</a> | Last Updated: June 14, 2026</p>
+                <p style="margin-top: 10px; font-size: 0.85rem; opacity: 0.8;">This restrictive vs nonrestrictive clauses guide helps writers master punctuation and write with confidence. Created with ❤️ by Ashar.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        // Quiz Data
+        const quizQuestions = [
+            { text: "Which sentence uses a nonrestrictive clause correctly?", options: ["The student who studies hard will succeed.", "My car, which is parked outside, needs a wash.", "The book that I borrowed is overdue.", "People who exercise regularly live longer."], correct: 1 },
+            { text: "Identify the restrictive clause in: 'The teacher who gave us the assignment is retiring.'", options: ["who gave us the assignment", "is retiring", "The teacher", "assignment is retiring"], correct: 0 },
+            { text: "Which sentence is punctuated correctly for a nonrestrictive clause?", options: ["My brother who lives in Chicago is visiting.", "My brother, who lives in Chicago is visiting.", "My brother, who lives in Chicago, is visiting.", "My brother who lives in Chicago, is visiting."], correct: 2 },
+            { text: "In US English, which word is typically used for restrictive clauses?", options: ["which", "that", "who", "whom"], correct: 1 },
+            { text: "What happens when you remove a nonrestrictive clause from a sentence?", options: ["The sentence becomes grammatically incorrect.", "The meaning changes completely.", "The sentence still makes perfect sense.", "The sentence loses its subject."], correct: 2 },
+            { text: "Which sentence contains a restrictive clause?", options: ["My laptop, which is new, runs fast.", "The laptop that I bought yesterday is fast.", "My old laptop, which crashed, needs repair.", "His laptop, a Dell model, is reliable."], correct: 1 },
+            { text: "What punctuation is required for nonrestrictive clauses?", options: ["No punctuation", "Commas around the clause", "A semicolon before", "Parentheses only"], correct: 1 },
+            { text: "Choose the correct version: 'The proposal ___ we submitted last week was approved.'", options: ["which", ", which", "that", ", that"], correct: 2 },
+            { text: "If a clause is essential to identify the noun, it is:", options: ["Nonrestrictive", "Nonessential", "Restrictive", "Parenthetical"], correct: 2 },
+            { text: "Which sentence has a correctly placed nonrestrictive clause?", options: ["The CEO, who approved the budget, left early.", "The CEO who approved the budget left early.", "The CEO who approved the budget, left early.", "The CEO, who approved the budget left early."], correct: 0 }
+        ];
+        
+        let currentQuestion = 0;
+        let userAnswers = new Array(10).fill(null);
+        
+        function renderQuestion() {
+            const q = quizQuestions[currentQuestion];
+            const container = document.getElementById('quiz-question-container');
+            if (!container) return;
+            container.innerHTML = `<div class="quiz-question"><h4>${currentQuestion + 1}. ${q.text}</h4>${q.options.map((opt, idx) => `<label class="quiz-option"><input type="radio" name="quiz" value="${idx}"> ${String.fromCharCode(65+idx)}. ${opt}</label>`).join('')}</div>`;
+            if (userAnswers[currentQuestion] !== null) {
+                const radios = document.querySelectorAll('input[name="quiz"]');
+                if (radios[userAnswers[currentQuestion]]) radios[userAnswers[currentQuestion]].checked = true;
+            }
+            document.getElementById('quiz-progress').innerHTML = `Question ${currentQuestion + 1} of 10`;
+            document.getElementById('prev-btn').disabled = currentQuestion === 0;
+            document.getElementById('next-btn').innerHTML = currentQuestion === 9 ? 'Finish →' : 'Next →';
+        }
+        
+        function saveCurrentAnswer() {
+            const selected = document.querySelector('input[name="quiz"]:checked');
+            if (selected) {
+                userAnswers[currentQuestion] = parseInt(selected.value);
+            }
+        }
+        
+        document.getElementById('next-btn')?.addEventListener('click', () => {
+            saveCurrentAnswer();
+            if (currentQuestion < 9) {
+                currentQuestion++;
+                renderQuestion();
+            } else {
+                const allAnswered = userAnswers.every(a => a !== null);
+                if (!allAnswered) {
+                    alert('Please answer all questions before finishing.');
+                    return;
+                }
+                document.getElementById('quiz-email-overlay').classList.add('active');
+            }
+        });
+        
+        document.getElementById('prev-btn')?.addEventListener('click', () => {
+            saveCurrentAnswer();
+            if (currentQuestion > 0) {
+                currentQuestion--;
+                renderQuestion();
+            }
+        });
+        
+        document.getElementById('submit-quiz-final')?.addEventListener('click', () => {
+            saveCurrentAnswer();
+            const allAnswered = userAnswers.every(a => a !== null);
+            if (!allAnswered) {
+                alert('Please answer all 10 questions before submitting.');
+                return;
+            }
+            document.getElementById('quiz-email-overlay').classList.add('active');
+        });
+        
+        document.getElementById('quiz-email-submit')?.addEventListener('click', async () => {
+            const email = document.getElementById('quiz-email').value.trim();
+            if (!email || !email.includes('@')) {
+                alert('Please enter a valid email address.');
+                return;
+            }
+            localStorage.setItem('grammarify_subscribed', 'true');
+            try {
+                const formData = new FormData();
+                formData.append('email', email);
+                await fetch('https://formspree.io/f/xkovnaya', { method: 'POST', body: formData, headers: { 'Accept': 'application/json' } });
+            } catch(e) { console.log(e); }
+            
+            let score = 0;
+            for (let i = 0; i < quizQuestions.length; i++) {
+                if (userAnswers[i] === quizQuestions[i].correct) score++;
+            }
+            document.getElementById('results-score').innerHTML = `🎉 Your Score: ${score}/10 🎉`;
+            const detailsDiv = document.getElementById('results-details');
+            detailsDiv.innerHTML = '';
+            for (let i = 0; i < quizQuestions.length; i++) {
+                const isCorrect = userAnswers[i] === quizQuestions[i].correct;
+                const statusColor = isCorrect ? '#10b981' : '#ef4444';
+                const statusText = isCorrect ? '✅ Correct' : '❌ Incorrect';
+                detailsDiv.innerHTML += `<div style="padding: 15px; margin-bottom: 15px; background: ${isCorrect ? 'rgba(16,185,129,0.1)' : 'rgba(239,68,68,0.1)'}; border-radius: 12px; border-left: 4px solid ${statusColor};"><strong>Q${i+1}:</strong> ${quizQuestions[i].text}<br><strong>Your answer:</strong> ${String.fromCharCode(65+userAnswers[i])}. ${quizQuestions[i].options[userAnswers[i]]}<br><strong>${statusText}</strong> — Correct answer: ${String.fromCharCode(65+quizQuestions[i].correct)}. ${quizQuestions[i].options[quizQuestions[i].correct]}</div>`;
+            }
+            document.getElementById('quiz-email-overlay').classList.remove('active');
+            document.getElementById('quiz-results-overlay').classList.add('active');
+        });
+        
+        renderQuestion();
+        
+        // Scanner with proper green flash and no underline
+        document.getElementById('scan-btn')?.addEventListener('click', () => {
+            const btn = document.getElementById('scan-btn');
+            const originalText = btn.innerHTML;
+            btn.innerHTML = '⏳ Scanning...';
+            btn.disabled = true;
+            
+            setTimeout(() => {
+                const corrected = `✅ 1. The students who passed the exam received certificates. (restrictive, no commas needed)\n✅ 2. My brother, who lives in New York, is visiting. (nonrestrictive, add commas)\n✅ 3. The report, which was submitted late, lost points. (nonrestrictive, add commas)`;
+                const resultDiv = document.getElementById('scanner-result');
+                resultDiv.innerHTML = `<div class="correct-text">${corrected.replace(/\n/g, '<br>')}</div>`;
+                resultDiv.classList.add('show');
+                resultDiv.classList.add('green-flash');
+                setTimeout(() => resultDiv.classList.remove('green-flash'), 2000);
+                btn.innerHTML = originalText;
+                btn.disabled = false;
+                
+                // Add "want to scan" and Grammarify button
+                const wantDiv = document.createElement('div');
+                wantDiv.className = 'transition-message';
+                wantDiv.innerHTML = `<span class="want-link">👉 "Want to scan your own long text for spelling, tenses, and plagiarism? Open our Full Advanced Editor!"</span>`;
+                resultDiv.appendChild(wantDiv);
+                const grammarifyDiv = document.createElement('div');
+                grammarifyDiv.className = 'transition-message';
+                grammarifyDiv.innerHTML = `<a href="https://grammarify.xyz" class="grammarify-btn" target="_blank">✨ Try Grammarify Free ✨</a>`;
+                resultDiv.appendChild(grammarifyDiv);
+            }, 3000);
+        });
+        
+        // Copy buttons
+        document.querySelectorAll('.copy-btn').forEach(btn => {
+            btn.addEventListener('click', async () => {
+                const text = btn.getAttribute('data-copy');
+                await navigator.clipboard.writeText(text);
+                const originalText = btn.innerHTML;
+                btn.innerHTML = 'Copied! ✅';
+                setTimeout(() => { btn.innerHTML = originalText; }, 2000);
+            });
+        });
+        
+        // Newsletter subscriptions
+        function subscribe(email, formId, successId) {
+            if (!email || !email.includes('@')) { alert('Please enter a valid email address.'); return false; }
+            localStorage.setItem('grammarify_subscribed', 'true');
+            fetch('https://formspree.io/f/xkovnaya', { method: 'POST', body: new URLSearchParams({ email }), headers: { 'Accept': 'application/json' } }).catch(e=>console.log);
+            if (formId) document.getElementById(formId).style.display = 'none';
+            if (successId) document.getElementById(successId).classList.add('active');
+            return true;
+        }
+        
+        document.getElementById('blog-subscribe-btn')?.addEventListener('click', () => {
+            const email = document.getElementById('blog-email-input').value;
+            if (subscribe(email, 'blog-newsletter-form', 'blog-newsletter-success')) {
+                setTimeout(() => { document.getElementById('newsletter-popup').classList.remove('active'); }, 1500);
+            }
+        });
+        
+        document.getElementById('popup-subscribe-btn')?.addEventListener('click', () => {
+            const email = document.getElementById('popup-email-input').value;
+            if (subscribe(email, null, null)) {
+                document.getElementById('newsletter-popup').classList.remove('active');
+            }
+        });
+        
+        // Show popup after delay
+        setTimeout(() => {
+            if (!localStorage.getItem('grammarify_subscribed')) {
+                document.getElementById('newsletter-popup').classList.add('active');
+            }
+        }, 5000);
+    </script>
+</body>
+</html>
