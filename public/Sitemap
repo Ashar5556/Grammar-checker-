@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://sitemaps.org">
+  <url>
+    <loc>https://yourwebsite.com</loc>
+  </url>
+
+  <url>
+    <loc>https://yourwebsite.comcomma-between-coordinate-adjectives</loc>
+  </url>
+
+  <url>
+    <loc>https://yourwebsite.comanother-blog-post-slug</loc>
+  </url>
+
+</urlset>
