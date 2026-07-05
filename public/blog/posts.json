@@ -131,9 +131,18 @@
     "description": "Missing a comma in direct address can change your entire meaning. Learn the vocative comma rule, email greetings, and common pitfalls — with clear examples.",
     "date": "2026-07-03",
     "url": "/blog/comma-with-direct-address.html",
-    "readTime": "12min read"
+    "readTime": "12min read",
     "image": "https://grammarify.xyz/images/comma-with-direct-address.png"
- 
+  },
+  {
+    "id": 16,
+    "title": "Comma in Direct Speech and Quotations: Dialogue Punctuation Rules",
+    "description": "Master comma placement in direct speech and quotations. Learn dialogue tags, action beats, split quotes & style guide rules. Fix your fiction writing today.",
+    "date": "2026-07-05",
+    "url": "blog/comma-in-direct-speech-and-quotations.html",
+    "readTime": "14min read",
+    "image": "https://grammarify.xyz/images/comma-in-direct-speech-and-quotations.png"
+    
   }
 
 ]
