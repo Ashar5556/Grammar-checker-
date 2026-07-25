@@ -1,0 +1,102 @@
+{
+  "redirects": [
+    {
+      "source": "/blog/comma-after-introductory-phrase.html",
+      "destination": "/blog/comma-after-introductory-elements.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/comma-after-introductory-clause.html",
+      "destination": "/blog/comma-after-introductory-elements.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/robot.txt",
+      "has": [
+        {
+          "type": "host",
+          "value": "grammar-checker-smoky.vercel.app"
+        }
+      ],
+      "destination": "https://grammarify.xyz",
+      "statusCode": 308
+    },
+    {
+      "source": "/sitemap.xml",
+      "has": [
+        {
+          "type": "host",
+          "value": "grammar-checker-smoky.vercel.app"
+        }
+      ],
+      "destination": "https://grammarify.xyz",
+      "statusCode": 308
+    },
+    {
+      "source": "/terms-of-use.html",
+      "has": [
+        {
+          "type": "host",
+          "value": "grammar-checker-smoky.vercel.app"
+        }
+      ],
+      "destination": "https://grammarify.xyz",
+      "statusCode": 308
+    },
+    {
+      "source": "/about.html",
+      "has": [
+        {
+          "type": "host",
+          "value": "grammar-checker-smoky.vercel.app"
+        }
+      ],
+      "destination": "https://grammarify.xyz",
+      "statusCode": 308
+    },
+    {
+      "source": "/faqs.html",
+      "has": [
+        {
+          "type": "host",
+          "value": "grammar-checker-smoky.vercel.app"
+        }
+      ],
+      "destination": "https://grammarify.xyz",
+      "statusCode": 308
+    },
+    {
+      "source": "/privacy-policy.html",
+      "has": [
+        {
+          "type": "host",
+          "value": "grammar-checker-smoky.vercel.app"
+        }
+      ],
+      "destination": "https://grammarify.xyz",
+      "statusCode": 308
+    },
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.grammarify.xyz"
+        }
+      ],
+      "destination": "https://grammarify.xyz",
+      "statusCode": 308
+    },
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "grammar-checker-smoky.vercel.app"
+        }
+      ],
+      "destination": "https://grammarify.xyz",
+      "statusCode": 308
+    }
+  ]
+}
