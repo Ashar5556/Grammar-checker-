@@ -91,24 +91,6 @@
   },
   {
     "id":11,
-    "title": "Comma After Introductory Phrase: Simple Rule",
-    "description": "Confused where to put commas after introductory phrases? Learn the simple rule with clear examples. Fix errors instantly. Read now!",
-    "date": "2026-04-20",
-    "url":"/blog/comma-after-introductory-phrase.html",
-    "readTime": "7min read",
-    "image": "https://grammarify.xyz/images/comma-after-introductory-phrase.png"
-  },
-  {
-    "id":12,
-    "title": "Comma After Introductory Clause: Rule in 5 Mins",
-    "description": "Struggling with commas after an introductory clause? Learn the simple rule with clear examples. Never guess again. Read now!",
-    "date": "2026-05-02",
-    "url": "/blog/comma-after-introductory-clause.html",
-    "readTime": "7min read",
-    "image": "https://grammarify.xyz/images/comma-after-introductory-clause.png"
-  },
-  {
-    "id":13,
     "title": "Restrictive vs Nonrestrictive Clauses: The 1-Comma Rule",
     "description": "Master restrictive vs nonrestrictive clauses with the exact 3-step removal test used by elite editors.",
     "date": "2026-06-14",
@@ -117,7 +99,7 @@
     "image": "https://grammarify.xyz/images/restrictive-vs-nonrestrictive-clauses.png"
   },
   {
-    "id": 14,
+    "id": 12,
     "title": "Comma Between Coordinate Adjectives: 2 Foolproof Tests",
     "description" : "Learn when to use a comma between coordinate adjectives. Master the 'and' & reorder tests to avoid common grammar mistakes.",
     "date": "2026-06-24",
@@ -126,7 +108,7 @@
     "image": "https://grammarify.xyz/images/comma-between-coordinate-adjectives.png"
   },
   {
-    "id": 15,
+    "id": 13,
     "title": "Comma With Direct Address: Rules, Examples & Mistakes",
     "description": "Missing a comma in direct address can change your entire meaning. Learn the vocative comma rule, email greetings, and common pitfalls — with clear examples.",
     "date": "2026-07-03",
@@ -135,7 +117,7 @@
     "image": "https://grammarify.xyz/images/comma-with-direct-address.png"
   },
   {
-    "id": 16,
+    "id": 14,
     "title": "Comma in Direct Speech and Quotations: Dialogue Punctuation Rules",
     "description": "Master comma placement in direct speech and quotations. Learn dialogue tags, action beats, split quotes & style guide rules. Fix your fiction writing today.",
     "date": "2026-07-05",
@@ -144,7 +126,7 @@
     "image": "https://grammarify.xyz/images/comma-in-direct-speech-and-quotations.png"
   },
   {
-    "id": 17,
+    "id": 15,
     "title": "Commas in Dates and places: Rules With Examples",
     "description": "Learn exactly where to place commas in dates and places — including trailing commas, date ranges, and legal formats. Master the rules with clear examples.",
     "date": "2026-07-11",
@@ -153,13 +135,22 @@
     "image": "https://grammarify.xyz/blog/comma-in-dates-and-places.png"
   },
   {
-    "id": 18,
+    "id": 16,
     "title": "Parenthetical Elements: How to Punctuate Nonessential Asides",
     "description": "Learn how to punctuate parenthetical elements correctly. Master commas, dashes, and parentheses with clear rules, examples, and common mistakes to avoid now.",
     "date": "2026-07-28",
     "url": "/blog/parenthetical-elements.html",
     "readTime": "12min read",
     "image": "https://grammarify.xyz/images/parenthetical-Elements.png"
+  },
+  {
+    "id": 17,
+    "title": "Colon vs semicolon: How to Choose Every Time (2026)",
+    "description": "Confused by semicolon vs colon? Learn the exact rules, see clear examples, and use our decision framework to choose the right mark every time.",
+    "date": "2026-08-08",
+    "url": "/blog/colon-vs-semicolon.html",
+    "readTime": "12min read",
+    "image": "https://grammarify.xyz/images/colon-vs-semicolon.png"
   }
 
 ]
