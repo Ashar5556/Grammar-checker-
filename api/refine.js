@@ -25,7 +25,7 @@ export default async function handler(req, res) {
         "Authorization": `Bearer ${process.env.api}`
       },
       body: JSON.stringify({
-        model: "llama-3.1-8b-instant", // stable model
+        model: "llama-3.3-70b-versatile", // stable model
         temperature: 0.2,
         max_tokens: 500,
         messages: [
