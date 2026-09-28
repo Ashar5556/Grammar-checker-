@@ -3,13 +3,13 @@
   "trailingSlash": false,
   "redirects": [
     {
-      "source": "/blog/comma-after-introductory-phrase.html",
-      "destination": "/blog/comma-after-introductory-elements.html",
+      "source": "/blog/comma-after-introductory-phrase",
+      "destination": "/blog/comma-after-introductory-elements",
       "statusCode": 301
     },
     {
       "source": "/blog/comma-after-introductory-clause.html",
-      "destination": "/blog/comma-after-introductory-elements.html",
+      "destination": "/blog/comma-after-introductory-elements",
       "statusCode": 301
     },
     {
@@ -35,7 +35,7 @@
       "statusCode": 308
     },
     {
-      "source": "/terms-of-use.html",
+      "source": "/terms-of-use",
       "has": [
         {
           "type": "host",
@@ -46,7 +46,7 @@
       "statusCode": 308
     },
     {
-      "source": "/about.html",
+      "source": "/about.",
       "has": [
         {
           "type": "host",
@@ -57,7 +57,7 @@
       "statusCode": 308
     },
     {
-      "source": "/faqs.html",
+      "source": "/faqs",
       "has": [
         {
           "type": "host",
@@ -68,7 +68,7 @@
       "statusCode": 308
     },
     {
-      "source": "/privacy-policy.html",
+      "source": "/privacy-policy",
       "has": [
         {
           "type": "host",
