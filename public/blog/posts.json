@@ -154,12 +154,30 @@
   },
   {
     "id": 18,
+    "title": "How to Fix a Comma Splice: Definition & Real Examples",
+    "description": "A single comma splice can make your writing look unprofessional. Discover how to spot this common mistake, fix it instantly, and write with confidence.",
+    "date": "2026-09-28",
+    "url": "/blog/comma-splice",
+    "readTime": "14min read",
+    "image": "https://grammarify.xyz/images/comma-splice.png"
+  },
+  {
+    "id": 19,
     "title": "Run-On Sentence: Definition, Examples & 5 Fixes",
     "description": "A run-on sentence isn't just too long — it's a clause boundary problem. Learn to spot fused sentences, comma splices, and fix them fast. Examples included.",
     "date": "2026-10-11",
     "url": "/blog/run-on-sentence",
     "readTime": "15min read",
     "image": "https://grammarify.xyz/images/run-on-sentence.png"
+  },
+  {
+    "id": "20",
+    "title": "Fused Sentence: Definition, Examples & 5 Easy Fixes",
+    "description": "A fused sentence crashes two complete thoughts together with zero punctuation. Learn what it is, see clear examples, and fix it fast — with 5 proven methods.",
+    "date": "2026-10-18",
+    "url": "/blog/fused-sentence",
+    "readTime": "16min read",
+    "image": "https://grammarify.xyz/images/fused-sentence.png"
   }
 
 ]
