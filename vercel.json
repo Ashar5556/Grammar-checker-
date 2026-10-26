@@ -8,7 +8,7 @@
       "statusCode": 301
     },
     {
-      "source": "/blog/comma-after-introductory-clause.html",
+      "source": "/blog/comma-after-introductory-clause",
       "destination": "/blog/comma-after-introductory-elements",
       "statusCode": 301
     },
@@ -31,7 +31,7 @@
           "value": "grammar-checker-smoky.vercel.app"
         }
       ],
-      "destination": "https://grammarify.xyz",
+      "destination": "https://grammarify.xyz/sitemap.xml",
       "statusCode": 308
     },
     {
@@ -42,18 +42,18 @@
           "value": "grammar-checker-smoky.vercel.app"
         }
       ],
-      "destination": "https://grammarify.xyz",
+      "destination": "https://grammarify.xyz/terms-of-use",
       "statusCode": 308
     },
     {
-      "source": "/about.",
+      "source": "/about-us",
       "has": [
         {
           "type": "host",
           "value": "grammar-checker-smoky.vercel.app"
         }
       ],
-      "destination": "https://grammarify.xyz",
+      "destination": "https://grammarify.xyz/about-us",
       "statusCode": 308
     },
     {
@@ -64,7 +64,7 @@
           "value": "grammar-checker-smoky.vercel.app"
         }
       ],
-      "destination": "https://grammarify.xyz",
+      "destination": "https://grammarify.xyz/faqs",
       "statusCode": 308
     },
     {
@@ -75,7 +75,7 @@
           "value": "grammar-checker-smoky.vercel.app"
         }
       ],
-      "destination": "https://grammarify.xyz",
+      "destination": "https://grammarify.xyz/privacy-policy",
       "statusCode": 308
     },
     {
