@@ -24,14 +24,14 @@
       "statusCode": 308
     },
     {
-      "source": "/sitemap.xml",
+      "source": "/sitemap.index.xml",
       "has": [
         {
           "type": "host",
           "value": "grammar-checker-smoky.vercel.app"
         }
       ],
-      "destination": "https://grammarify.xyz/sitemap.xml",
+      "destination": "https://grammarify.xyz/sitemap.index.xml",
       "statusCode": 308
     },
     {
