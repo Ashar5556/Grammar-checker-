@@ -1,0 +1,21 @@
+{
+  "name": "Grammarify - Free Grammar Checker",
+  "short_name": "Grammarify",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#4f46e5",
+  "icons": [
+    {
+      "src": "/images/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/images/grammarify-logo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
