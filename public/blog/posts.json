@@ -171,7 +171,7 @@
     "image": "https://grammarify.xyz/images/run-on-sentence.png"
   },
   {
-    "id": "20",
+    "id": 20,
     "title": "Fused Sentence: Definition, Examples & 5 Easy Fixes",
     "description": "A fused sentence crashes two complete thoughts together with zero punctuation. Learn what it is, see clear examples, and fix it fast — with 5 proven methods.",
     "date": "2026-10-18",
@@ -180,7 +180,7 @@
     "image": "https://grammarify.xyz/images/fused-sentence.png"
   },
   {
-    "id": "21",
+    "id": 21,
     "title": "Independent vs Dependent Clause: Definitions & Rules",
     "description": "Learn the difference between independent and dependent clauses with clear examples, comma rules, and clause types explained. Master sentence structure today.",
     "date": "2026-10-23",
@@ -189,7 +189,7 @@
     "image": "https://grammarify.xyz/images/independent-vs-dependent-clause.png"
   },
   {
-    "id": "22",
+    "id": 22,
     "title": "Independent Clause: Definition, Examples & How to Use It",
     "description": "Learn what an independent clause is with clear definitions, examples, and rules. Master subject-predicate structure and clause identification today.",
     "date": "2026-11-01",
@@ -198,7 +198,7 @@
     "image": "https://grammarify.xyz/images/independent-clause.png"
   },
   {
-    "id": 23",
+    "id": 23,
     "title": "What Is a Dependent Clause? Types, Examples & Rules",
     "description": "A dependent clause has a subject and verb but can't stand alone. Learn all three types, comma rules, and common errors — with clear examples. Master it today.",
     "date": "2026-11-06",
