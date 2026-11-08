@@ -13,90 +13,60 @@
       "statusCode": 301
     },
     {
+      "source": "/blog/independent-clause",
+      "destination": "/blog/independent-clauses",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/independent-and-dependent-clause",
+      "destination": "/blog/independent-and-dependent-clauses",
+      "statusCode": 301
+    },
+    {
       "source": "/robot.txt",
-      "has": [
-        {
-          "type": "host",
-          "value": "grammar-checker-smoky.vercel.app"
-        }
-      ],
+      "has": [{ "type": "host", "value": "grammar-checker-smoky.vercel.app" }],
       "destination": "https://grammarify.xyz",
       "statusCode": 308
     },
     {
       "source": "/sitemap.index.xml",
-      "has": [
-        {
-          "type": "host",
-          "value": "grammar-checker-smoky.vercel.app"
-        }
-      ],
+      "has": [{ "type": "host", "value": "grammar-checker-smoky.vercel.app" }],
       "destination": "https://grammarify.xyz/sitemap.index.xml",
       "statusCode": 308
     },
     {
       "source": "/terms-of-use",
-      "has": [
-        {
-          "type": "host",
-          "value": "grammar-checker-smoky.vercel.app"
-        }
-      ],
+      "has": [{ "type": "host", "value": "grammar-checker-smoky.vercel.app" }],
       "destination": "https://grammarify.xyz/terms-of-use",
       "statusCode": 308
     },
     {
       "source": "/about-us",
-      "has": [
-        {
-          "type": "host",
-          "value": "grammar-checker-smoky.vercel.app"
-        }
-      ],
+      "has": [{ "type": "host", "value": "grammar-checker-smoky.vercel.app" }],
       "destination": "https://grammarify.xyz/about-us",
       "statusCode": 308
     },
     {
       "source": "/faqs",
-      "has": [
-        {
-          "type": "host",
-          "value": "grammar-checker-smoky.vercel.app"
-        }
-      ],
+      "has": [{ "type": "host", "value": "grammar-checker-smoky.vercel.app" }],
       "destination": "https://grammarify.xyz/faqs",
       "statusCode": 308
     },
     {
       "source": "/privacy-policy",
-      "has": [
-        {
-          "type": "host",
-          "value": "grammar-checker-smoky.vercel.app"
-        }
-      ],
+      "has": [{ "type": "host", "value": "grammar-checker-smoky.vercel.app" }],
       "destination": "https://grammarify.xyz/privacy-policy",
       "statusCode": 308
     },
     {
       "source": "/(.*)",
-      "has": [
-        {
-          "type": "host",
-          "value": "www.grammarify.xyz"
-        }
-      ],
+      "has": [{ "type": "host", "value": "www.grammarify.xyz" }],
       "destination": "https://grammarify.xyz",
       "statusCode": 308
     },
     {
       "source": "/(.*)",
-      "has": [
-        {
-          "type": "host",
-          "value": "grammar-checker-smoky.vercel.app"
-        }
-      ],
+      "has": [{ "type": "host", "value": "grammar-checker-smoky.vercel.app" }],
       "destination": "https://grammarify.xyz",
       "statusCode": 308
     }
